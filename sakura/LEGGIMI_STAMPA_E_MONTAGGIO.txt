@@ -1,0 +1,97 @@
+SAKURA - 6 MODULI CON GIUNTI A PERNO
+
+Dimensioni assemblate: 410 x 520 x 7 mm.
+Ingombro massimo di ogni modulo: 205 x 174 x 7 mm.
+Importare gli STL in millimetri, scala 100%. I pezzi sono appoggiati a Z=0.
+
+STRUTTURA DEL PROGETTO
+Cartella principale: versione definitiva da 7 mm (STL, guida.html, mappa).
+prove/: provini e giunto di prova usati per tarare le sedi.
+originale/: pannello intero ricreato (410 x 520 x 10 mm), prima della divisione.
+La vecchia versione da 10 mm e stata rimossa: resta nella cronologia git.
+
+DA STAMPARE
+P01_205x172x7mm.stl: 1 copia
+P02_205x172x7mm.stl: 1 copia
+P03_205x174x7mm.stl: 1 copia
+P04_205x174x7mm.stl: 1 copia
+P05_205x174x7mm.stl: 1 copia
+P06_205x174x7mm.stl: 1 copia
+PERNO_D3.42_L15_stampare_21_copie.stl: 21 copie
+Il file del perno contiene UN SOLO perno, separato dai moduli.
+
+MAPPA - VISTA DEL PANNELLO, ORIENTAMENTO DEGLI STL
+       ALTO
+    P01 | P02
+    ----+----
+    P03 | P04
+    ----+----
+    P05 | P06
+       BASSO
+
+MONTAGGIO
+1. Unire P01 con P02, P03 con P04, P05 con P06.
+   Ogni coppia usa 3 perni: 9 perni in totale.
+2. Unire la riga inferiore alla centrale con 6 perni.
+3. Unire la riga superiore con altri 6 perni.
+4. Accostare le facce fino alla battuta. Seguire mappa_montaggio.svg.
+
+GIUNTI
+Perni approvati: diametro 3 mm, lunghezza 15 mm, estremita smussate.
+Ogni sede: diametro 3,4 mm e profondita 7,5 mm, invito smussato.
+Gioco radiale nominale: 0,20 mm. I fori sono ricavati nei bordi dei moduli.
+Zone piene locali rinforzano ogni foro; bordi pieni sottili stabilizzano i tagli.
+Il pattern e chiuso localmente nei rinforzi, come concordato.
+
+STAMPA
+Mantenere le impostazioni dimensionali usate sul provino approvato.
+
+IMPOSTAZIONI DI STAMPA (moduli P01-P06)
+Profilo slicer: 0.20mm Standard @Flashforge AD... - PLA, ugello 0,4 mm
+Pareti
+  Wall loops: 2
+  Alternate extra wall: no
+  Detect thin walls: no
+Top/bottom
+  Top shell layers: 3 - Top shell thickness: 1 mm
+  Top surface density: 100% - Top surface pattern: Hilbert Curve
+  Bottom shell layers: 3 - Bottom shell thickness: 0 mm
+  Bottom surface density: 100% - Bottom surface pattern: Monotonic
+  Top/Bottom solid infill/wall overlap: 25%
+Infill
+  Sparse infill density: 15%
+  Fill Multiline: 1
+  Sparse infill pattern: Support Cubic
+  Sparse infill direction: 45 gradi
+Brim 2 mm, nessun supporto.
+
+I fori laterali dei moduli si stampano in orientamento diverso dai fori
+verticali dei cubi di prova: verificarne la pulizia e il primo accoppiamento.
+Il limite 210 x 210 mm riguarda il modello; su un piatto utile di 210 mm
+un brim da 2 mm mantiene i moduli entro 209 mm di larghezza.
+
+VERIFICHE DIGITALI
+7 STL riletti e verificati: un solido chiuso per file, normali coerenti,
+nessun triangolo degenere, dimensioni corrette, base Z=0.
+42 sedi verificate a profondita 7,5 mm. Nessuna interferenza geometrica
+dei 21 perni nel pannello assemblato, entro la precisione numerica.
+La taratura del perno e quella del provino approvato dall'utente.
+
+REVISIONE SPESSORE 10 -> 7 mm
+Spessore dei moduli portato a 7,000 mm. Ingombri XY e pattern invariati.
+Perno: vedi REVISIONE PERNO.
+Le sedi sono invariate in diametro (3,4 mm), profondita (7,5 mm) e posizione XY.
+L'asse delle sedi e stato riportato in mezzeria: da Z=5,0 a Z=3,5 mm.
+Materiale residuo sopra e sotto la sede: 1,80 mm (1,55 mm all'imbocco smussato).
+Metodo: i due strati pieni sopra e sotto la fascia delle sedi sono stati
+accorciati; la fascia delle sedi (3,9 mm) e stata traslata rigida, quindi i
+cilindri delle sedi NON sono schiacciati e restano circolari.
+Verifiche: 7 STL riletti, 0 spigoli non-manifold, 0 vertici isolati,
+0 triangoli degeneri, base a Z=0, quote 205 x 172/174 x 7,000 mm,
+42 sedi ricontrollate a profondita 7,500 mm.
+
+REVISIONE PERNO (sedi invariate, gia stampate)
+Perno definitivo: D3,42 x L15, smussi 0,25 mm, 21 copie.
+Scelto con prove di stampa sulle sedi D3,4 gia stampate:
+D3,00-3,25 troppo lenti; D3,40 e D3,45 corretti; scelto il valore intermedio.
+Interferenza nominale 0,01 mm per lato, compensata dalle tolleranze di stampa.
