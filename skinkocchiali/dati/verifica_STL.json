@@ -1,0 +1,130 @@
+[
+  {
+    "file": "stl/P01_Modulo_principale.stl",
+    "triangles": 29572,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 1.236150000006755e-06,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      115.0,
+      100.0,
+      218.7
+    ],
+    "volume_mm3": 176304.8682
+  },
+  {
+    "file": "stl/P02_Sezione_mobile_4x60.stl",
+    "triangles": 1884,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 0.00013860584999968997,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      4.0,
+      57.3,
+      180.8
+    ],
+    "volume_mm3": 16714.08
+  },
+  {
+    "file": "stl/P03_Sezione_mobile_50x80.stl",
+    "triangles": 3456,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 0.0001388175500000072,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      50.0,
+      77.3,
+      180.8
+    ],
+    "volume_mm3": 57028.7518
+  },
+  {
+    "file": "stl/P04_Porta_patch_pieno.stl",
+    "triangles": 408,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 1.376999999998924e-07,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      70.0,
+      126.0,
+      6.4
+    ],
+    "volume_mm3": 26268.7834
+  },
+  {
+    "file": "stl/P05_Vassoio_con_asticella.stl",
+    "triangles": 588,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 0.0031630231095096184,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      66.4,
+      29.5667,
+      14.1
+    ],
+    "volume_mm3": 971.8735
+  },
+  {
+    "file": "stl/P06_Porta_occhiali.stl",
+    "triangles": 488,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 0.01655153930000143,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      142.0,
+      46.1,
+      23.7
+    ],
+    "volume_mm3": 21032.2064
+  },
+  {
+    "file": "stl/P07_Chiave_meandro.stl",
+    "triangles": 44,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 4.199999999999999,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      16.0,
+      19.0,
+      2.8
+    ],
+    "volume_mm3": 319.2
+  },
+  {
+    "file": "stl/P08_Fermo_L.stl",
+    "triangles": 544,
+    "closed_edges": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "degenerate_triangles": 0,
+    "min_triangle_area_mm2": 0.0010617958999999339,
+    "z_min": 0.0,
+    "dimensions_mm": [
+      6.7,
+      77.3,
+      33.5
+    ],
+    "volume_mm3": 6412.7366
+  }
+]

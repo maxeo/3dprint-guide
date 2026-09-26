@@ -8,6 +8,7 @@ https://maxeo.github.io/3dprint-guide/
 | Sakura | https://maxeo.github.io/3dprint-guide/sakura/guida.html |
 | Supporto per tablet | https://maxeo.github.io/3dprint-guide/supporto-tablet/guida.html |
 | GattoLavello compatto | https://maxeo.github.io/3dprint-guide/gattolavello/guida.html |
+| SkinkOcchiali | https://maxeo.github.io/3dprint-guide/skinkocchiali/guida.html |
 
 I sorgenti dei progetti stanno nei repo privati `3dprint-*`. Le cartelle qui sono copie:
 per aggiornarle eseguire `./aggiorna_guide.sh`, poi commit e push.

@@ -1,0 +1,314 @@
+{
+  "solids": [
+    {
+      "name": "P01_Modulo_principale",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 176304.888
+    },
+    {
+      "name": "P02_Sezione_mobile_4x60",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 16714.14291
+    },
+    {
+      "name": "P03_Sezione_mobile_50x80",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 57028.73909
+    },
+    {
+      "name": "P04_Porta_patch_pieno",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 26268.77805
+    },
+    {
+      "name": "P05_Vassoio_con_asticella",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 971.87271
+    },
+    {
+      "name": "P06_Porta_occhiali",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 21032.20565
+    },
+    {
+      "name": "P07_Chiave_meandro",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 319.19999
+    },
+    {
+      "name": "P07_Chiave_meandro_2",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 319.19999
+    },
+    {
+      "name": "P08_Fermo_L",
+      "non_manifold": 0,
+      "degenerate": 0,
+      "components": 1,
+      "volume_mm3": 6412.74015
+    }
+  ],
+  "assembly_intersections": [
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P02_Sezione_mobile_4x60",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P03_Sezione_mobile_50x80",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P04_Porta_patch_pieno",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P05_Vassoio_con_asticella",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P06_Porta_occhiali",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P07_Chiave_meandro",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P01_Modulo_principale",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P03_Sezione_mobile_50x80",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P04_Porta_patch_pieno",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P05_Vassoio_con_asticella",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P06_Porta_occhiali",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P07_Chiave_meandro",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P02_Sezione_mobile_4x60",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P03_Sezione_mobile_50x80",
+      "b": "P04_Porta_patch_pieno",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P03_Sezione_mobile_50x80",
+      "b": "P05_Vassoio_con_asticella",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P03_Sezione_mobile_50x80",
+      "b": "P06_Porta_occhiali",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P03_Sezione_mobile_50x80",
+      "b": "P07_Chiave_meandro",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P03_Sezione_mobile_50x80",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P03_Sezione_mobile_50x80",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P04_Porta_patch_pieno",
+      "b": "P05_Vassoio_con_asticella",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P04_Porta_patch_pieno",
+      "b": "P06_Porta_occhiali",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P04_Porta_patch_pieno",
+      "b": "P07_Chiave_meandro",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P04_Porta_patch_pieno",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P04_Porta_patch_pieno",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P05_Vassoio_con_asticella",
+      "b": "P06_Porta_occhiali",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P05_Vassoio_con_asticella",
+      "b": "P07_Chiave_meandro",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P05_Vassoio_con_asticella",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P05_Vassoio_con_asticella",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P06_Porta_occhiali",
+      "b": "P07_Chiave_meandro",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P06_Porta_occhiali",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P06_Porta_occhiali",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P07_Chiave_meandro",
+      "b": "P07_Chiave_meandro_2",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P07_Chiave_meandro",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "P07_Chiave_meandro_2",
+      "b": "P08_Fermo_L",
+      "volume_mm3": 0.0
+    }
+  ],
+  "slider_motion": [
+    {
+      "lift_mm": 0,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 5,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 10,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 15,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 20,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 25,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 50,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 100,
+      "body_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 112,
+      "body_intersection_mm3": 0.0
+    }
+  ],
+  "slider_vs_pocket": [
+    {
+      "lift_mm": 0,
+      "p01_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 5,
+      "p01_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 10,
+      "p01_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 15,
+      "p01_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 20,
+      "p01_intersection_mm3": 0.0
+    },
+    {
+      "lift_mm": 25,
+      "p01_intersection_mm3": 0.0
+    }
+  ],
+  "note": "Tasca del porta patch a portapenne (pareti alte 30 mm, gioco 1 mm, svasatura 1,5 mm, varco per l'asticella). P02 a X 25-29, P03 a X 30-80, fermo P08, chiavi P07 nelle due posizioni."
+}

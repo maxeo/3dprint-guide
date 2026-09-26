@@ -1,0 +1,15 @@
+PROVINI DEL PORTA PATCH - stampare una copia per file
+
+T01_Guida_porta_patch.stl: tratto inferiore della tasca, largo quanto P04.
+T02_Cursore_porta_patch.stl: vassoio e tratto iniziale dell'asticella di P05.
+Sono ricavati dai solidi definitivi; il cursore corto non include la presa alta.
+
+Importare in millimetri, scala 100%. Gli STL sono gia appoggiati a Z=0.
+Usare materiale, strato e supporti previsti per P04/P05. Il corpo ha la schiena
+sul piatto; verificare i supporti sotto il frontale. Il cursore richiede supporti
+sotto l'asta sospesa. Rimuovere ogni residuo prima della prova.
+
+Inserire T02 dall'alto in T01, con il collegamento nella fessura frontale.
+Verificare una corsa breve a mano senza forzare. Gioco CAD: 0,3 mm per lato.
+I provini verificano l'accoppiamento trasversale; la flessione dell'asta definitiva
+e la corsa completa vanno provate sui componenti interi.

@@ -1,0 +1,92 @@
+SKINKOCCHIALI - REVISIONE 14 - STAMPA E MONTAGGIO
+13 settembre 2026, aggiornato il 14 settembre 2026
+
+ORIENTAMENTO
+Vista dal davanti: Nord a destra, Sud a sinistra.
+Assieme: X verso destra; Y verso il fondo; Z verso l'alto.
+STL singoli: in millimetri, scala 100%, Z minimo = 0.
+P04 e P05 sono ruotati per la stampa; usare il file Blender per l'assieme.
+Ingombro assieme: 150 x 126,1 x 218,7 mm, entro il mobile 310 x 130 x 219 mm.
+La profondita include il portaocchiali; la larghezza include la sua sporgenza a Sud.
+
+DA STAMPARE - UNA COPIA CIASCUNO, TRANNE P07
+stl/P01_Modulo_principale.stl - 115.0 x 100.0 x 218.7 mm
+stl/P02_Sezione_mobile_4x60.stl - 4.0 x 57.3 x 180.8 mm
+stl/P03_Sezione_mobile_50x80.stl - 50.0 x 77.3 x 180.8 mm
+stl/P04_Porta_patch_pieno.stl - 70.0 x 126.0 x 6.4 mm
+stl/P05_Vassoio_con_asticella.stl - 66.4 x 29.567 x 14.1 mm
+stl/P06_Porta_occhiali.stl - 142.0 x 46.1 x 23.7 mm
+stl/P07_Chiave_meandro.stl - 16.0 x 19.0 x 2.8 mm - DUE COPIE
+stl/P08_Fermo_L.stl - 6.7 x 77.3 x 33.5 mm
+
+PRIMA DELLA STAMPA COMPLETA
+Stampare prove/T01_Guida_porta_patch.stl e prove/T02_Cursore_porta_patch.stl.
+Controllare scorrimento, pulizia della fessura e gioco del vassoio.
+Il gioco geometrico iniziale e 0,30 mm per lato; non e stato tarato fisicamente.
+Il profilo Sakura non si trasferisce automaticamente a questi componenti.
+
+IMPOSTAZIONI INIZIALI DA CONTROLLARE NELLO SLICER
+Ugello 0,4 mm; strato 0,20 mm (0,16-0,20 per P04/P05); 3 pareti.
+Riempimento 15-20% come punto di partenza; le sezioni sottili saranno piene.
+P01 verticale, alto 218,7 mm: verificare altezza utile e supporti per soffitti/grata.
+P02/P03/P08: i pioli poggiano sul piatto e la base resta sollevata di 3,5 mm.
+Servono supporti sotto la base; valutare orientamenti alternativi nello slicer.
+P04: schiena sul piatto; verificare ponti/supporti sotto il frontale e rimuoverli
+completamente dalla tasca. Non lasciare materiale nel percorso del cursore.
+P05: retro vassoio sul piatto, supporti dal piatto sotto asticella e presa.
+P01: le sedi delle chiavi sono aperte sotto la base; il soffitto a 3,1 mm richiede ponti corti.
+P06: base sul piatto, nessun supporto. Pulire le fessure a S.
+P07: piatta sul piatto, 100% di riempimento. Provarla nelle fessure prima del montaggio.
+Non e stata eseguita una simulazione dello slicer, ne una stampa fisica.
+
+MONTAGGIO
+1. Inserire P02 e P03 nelle sedi superiori di P01 (tre file di fori, Y = 25, 42,5, 60).
+   Configurazione mostrata: P02 x=25..29 (pioli a X=27); P03 x=30..80 (pioli a X=42 e 72).
+   Appoggiare il fermo a L P08 a Sud di P02: perni nei fori X=22, Y=25 e 60.
+2. Appoggiare P06 nel mobile e inserire le due chiavi P07 nelle fessure a S.
+   Abbassare P01 sopra P06: le sedi sotto la base ricevono l'altra meta delle chiavi.
+   Per staccare P06 sollevare P01 di qualche millimetro.
+3. Fuori dal mobile, infilare P05 dall'alto dentro P04.
+   L'asticella resta davanti; il collegamento passa nella fessura aperta in alto.
+4. Appoggiare i foglietti patch da circa 66 x 108 mm sul vassoio.
+5. Lasciare scendere P04 nella tasca davanti a P01, come in un portapenne (gioco 1 mm, bordo svasato).
+6. Per prelevare i patch, sollevare a mano la presa frontale per 0-25 mm.
+   Riabbassarla dopo l'uso. Non ci sono scatti o arresti che la tengano sollevata.
+7. Per rimuovere tutto il porta patch, usare la linguetta posteriore superiore.
+   Per estrarre completamente il cursore, rimuovere P04 dal modulo e sfilarlo dall'alto.
+
+MODIFICHE
+Pareti del porta patch piene, con sola fessura funzionale da 4,6 mm.
+Tasca interna 67 x 3,2 mm. Vassoio 66,4 x 2,6 x 2 mm, smusso 0,25 mm.
+Asticella accorciata a 1/3: 29,57 mm (prima 88,7 mm), sezione 4 x 2,4 mm; presa larga 10 mm, sporgente 9,6 mm dalla parete.
+Piede del porta patch derivato dall'originale.
+Tasca su P01 allargata al piede con gioco di 0,3 mm per lato.
+Scarico locale del bordo posteriore della tasca per non interferire con P03.
+Tutti i componenti riflessi lungo Y per correggere destra/sinistra nella vista frontale.
+
+AGGIORNAMENTO DEL 14 SETTEMBRE 2026
+P01: tolto il telaio Sud (montanti, traverso e bordino); il lato Sud resta aperto.
+P01: parete posteriore da 2,4 mm da Sud fino al divisorio; la Sezione 3 resta aperta dietro.
+P01: fermi superiori spostati agli angoli della grata.
+P01-P06: agganci a coda di rondine sostituiti da due chiavi a meandro P07 (gioco 0,3 mm per lato).
+P01: due sedi uguali sul bordo Sud (Y = 12 e 70,5 mm) per moduli futuri.
+P01: terza fila di fori degli inserti a Y = 42,5 mm; P02 e P03 hanno i pioli corrispondenti.
+P02 e P03 invertiti: P02 a X 25-29, P03 a X 30-80. Scarico della tasca allungato fino a X 80,3.
+P01: tasca del porta patch rifatta a portapenne: pareti alte 30 mm, gioco 1 mm per lato,
+     svasatura 1,5 mm in cima e varco da 8 mm per l'asticella di P05. Supportare il fondo sporgente.
+P08: nuovo fermo a L (appoggio 6,7 x 2,4, ala alta 30 mm, lungo 77,3 mm) con due perni.
+P02/P03: accorciati sul retro a Y = 77,3 mm; P03 senza fondo, lo chiude la parete di P01.
+P06: nasello con punta raccordata (R 4 mm) e spigoli smussati (1 mm), altezza 23,7 mm invariata.
+
+CONTROLLI DIGITALI
+Vedi dati/verifica_geometria.json e verifica_STL.json.
+8 componenti (P07 in due copie): un solido chiuso ciascuno, nessuna faccia degenere.
+36 coppie di solidi nell'assieme: nessuna intersezione volumetrica rilevata.
+P05 in P04: nessuna intersezione a 0,5,10,15,20,25,50,100,112 mm di sollevamento.
+I controlli non certificano attrito, deformazione, carico o qualita della stampa.
+Non tutte le combinazioni di riposizionamento di P02/P03 sono state verificate.
+
+STRUTTURA DELLA CARTELLA, COME SAKURA
+Radice: pezzi numerati, guida interattiva, mappa, istruzioni, file Blender.
+prove/: due provini di scorrimento e istruzioni.
+originale/: file precedenti, conservati; assieme v14 solo per riferimento.
