@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="930" viewBox="0 0 940 930">
+<rect width="940" height="930" fill="#faf7f4"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#382b30">
+<text x="60" y="65" font-size="34" font-weight="700">Sakura · mappa di montaggio</text>
+<text x="60" y="98" font-size="18">6 moduli · 410 × 520 × 7 mm assemblati · 21 perni separati</text>
+<text x="135" y="148" font-size="16" font-weight="700">ALTO</text>
+<rect x="85" y="170" width="205" height="172" fill="#e5b9c1" stroke="#fff" stroke-width="3"/>
+<text x="187.5" y="250.0" text-anchor="middle" font-size="36" font-weight="700">P01</text>
+<text x="187.5" y="279.0" text-anchor="middle" font-size="15">205 × 172 × 7 mm</text>
+<rect x="290" y="170" width="205" height="172" fill="#d4bacf" stroke="#fff" stroke-width="3"/>
+<text x="392.5" y="250.0" text-anchor="middle" font-size="36" font-weight="700">P02</text>
+<text x="392.5" y="279.0" text-anchor="middle" font-size="15">205 × 172 × 7 mm</text>
+<rect x="85" y="342" width="205" height="174" fill="#e5b9c1" stroke="#fff" stroke-width="3"/>
+<text x="187.5" y="423.0" text-anchor="middle" font-size="36" font-weight="700">P03</text>
+<text x="187.5" y="452.0" text-anchor="middle" font-size="15">205 × 174 × 7 mm</text>
+<rect x="290" y="342" width="205" height="174" fill="#d4bacf" stroke="#fff" stroke-width="3"/>
+<text x="392.5" y="423.0" text-anchor="middle" font-size="36" font-weight="700">P04</text>
+<text x="392.5" y="452.0" text-anchor="middle" font-size="15">205 × 174 × 7 mm</text>
+<rect x="85" y="516" width="205" height="174" fill="#e5b9c1" stroke="#fff" stroke-width="3"/>
+<text x="187.5" y="597.0" text-anchor="middle" font-size="36" font-weight="700">P05</text>
+<text x="187.5" y="626.0" text-anchor="middle" font-size="15">205 × 174 × 7 mm</text>
+<rect x="290" y="516" width="205" height="174" fill="#d4bacf" stroke="#fff" stroke-width="3"/>
+<text x="392.5" y="597.0" text-anchor="middle" font-size="36" font-weight="700">P06</text>
+<text x="392.5" y="626.0" text-anchor="middle" font-size="15">205 × 174 × 7 mm</text>
+<line x1="282.5" y1="660" x2="297.5" y2="660" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="603" x2="297.5" y2="603" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="546" x2="297.5" y2="546" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="486" x2="297.5" y2="486" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="429" x2="297.5" y2="429" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="372" x2="297.5" y2="372" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="312" x2="297.5" y2="312" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="256" x2="297.5" y2="256" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.5" y1="200" x2="297.5" y2="200" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="117" y1="508.5" x2="117" y2="523.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="187.5" y1="508.5" x2="187.5" y2="523.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="258" y1="508.5" x2="258" y2="523.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="322" y1="508.5" x2="322" y2="523.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="392.5" y1="508.5" x2="392.5" y2="523.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="463" y1="508.5" x2="463" y2="523.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="117" y1="334.5" x2="117" y2="349.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="187.5" y1="334.5" x2="187.5" y2="349.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="258" y1="334.5" x2="258" y2="349.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="322" y1="334.5" x2="322" y2="349.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="392.5" y1="334.5" x2="392.5" y2="349.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<line x1="463" y1="334.5" x2="463" y2="349.5" stroke="#446568" stroke-width="5" stroke-linecap="round"/>
+<text x="135" y="723" font-size="16" font-weight="700">BASSO</text>
+<text x="560" y="215" font-size="23" font-weight="700">Ordine di montaggio</text>
+<text x="560" y="258" font-size="18">1. Unisci le tre coppie:</text>
+<text x="580" y="290" font-size="18">P01 + P02 · 3 perni</text>
+<text x="580" y="320" font-size="18">P03 + P04 · 3 perni</text>
+<text x="580" y="350" font-size="18">P05 + P06 · 3 perni</text>
+<text x="560" y="405" font-size="18">2. Unisci le righe:</text>
+<text x="580" y="437" font-size="18">inferiore + centrale · 6 perni</text>
+<text x="580" y="467" font-size="18">aggiungi la superiore · 6 perni</text>
+<line x1="563" y1="530" x2="600" y2="530" stroke="#446568" stroke-width="6" stroke-linecap="round"/>
+<text x="620" y="536" font-size="17">Posizione di un perno</text>
+<text x="560" y="589" font-size="20" font-weight="700">Perno Ø3,42 × 15 mm</text>
+<text x="560" y="620" font-size="17">STL a sé · stampa 21 copie</text>
+<text x="560" y="666" font-size="17">Sedi Ø3,4 × 7,5 mm per lato</text>
+<text x="60" y="799" font-size="21" font-weight="700">Un modulo per file · scala 100% · millimetri</text>
+<text x="60" y="832" font-size="17">Ogni modulo è entro 210 × 210 mm. Rinforzi e sedi sono integrati.</text>
+<text x="60" y="863" font-size="17">La mappa è schematica: le sagome floreali sono presenti negli STL.</text>
+</g></svg>
