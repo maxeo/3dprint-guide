@@ -658,3 +658,10 @@ Modifiche richieste dopo la revisione 14, applicate agli STL e al file Blender.
 - **Fermo a L (P08).** Appoggio 6,7 × 2,4 mm e ala verticale alta 30 mm, lungo 77,3 mm, con due perni nei fori X = 22, Y = 25 e 60. L'ala resta a 0,3 mm dal fianco Sud di P02.
 
 Verifiche digitali: ogni pezzo è un solido chiuso e connesso; le 36 coppie di solidi dell'assieme, con le due chiavi e il fermo, non hanno intersezioni volumetriche. Accoppiamento delle chiavi e ponti sopra le sedi vanno provati in stampa.
+
+# 28. Aggiornamento del 27 settembre 2026
+
+- **Chiavi nascoste sotto P06.** Le fessure a S del piano di P06 non sono più passanti: diventano tasche aperte solo sotto, profonde 2,2 mm, con 0,8 mm di piano sopra. Gioco nel piano invariato (0,3 mm per lato).
+- **Chiave P07.** Spessore ridotto da 2,8 a 2 mm; resta 0,2 mm di gioco verticale nella tasca di P06. La sede sotto la base di P01 resta profonda 3,1 mm.
+- **Montaggio.** Le chiavi si appoggiano sul piano, P06 si abbassa sopra, poi P01.
+- **Fermo a L (P08).** Tre perni Ø3 nei fori X = 22, Y = 25, 42,5 e 60 mm, uno per ogni fila di P01.

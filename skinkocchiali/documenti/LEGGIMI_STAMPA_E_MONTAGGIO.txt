@@ -16,7 +16,7 @@ stl/P03_Sezione_mobile_50x80.stl - 50.0 x 77.3 x 180.8 mm
 stl/P04_Porta_patch_pieno.stl - 70.0 x 126.0 x 6.4 mm
 stl/P05_Vassoio_con_asticella.stl - 66.4 x 29.567 x 14.1 mm
 stl/P06_Porta_occhiali.stl - 142.0 x 46.1 x 23.7 mm
-stl/P07_Chiave_meandro.stl - 16.0 x 19.0 x 2.8 mm - DUE COPIE
+stl/P07_Chiave_meandro.stl - 16.0 x 19.0 x 2.0 mm - DUE COPIE
 stl/P08_Fermo_L.stl - 6.7 x 77.3 x 33.5 mm
 
 PRIMA DELLA STAMPA COMPLETA
@@ -35,15 +35,16 @@ P04: schiena sul piatto; verificare ponti/supporti sotto il frontale e rimuoverl
 completamente dalla tasca. Non lasciare materiale nel percorso del cursore.
 P05: retro vassoio sul piatto, supporti dal piatto sotto asticella e presa.
 P01: le sedi delle chiavi sono aperte sotto la base; il soffitto a 3,1 mm richiede ponti corti.
-P06: base sul piatto, nessun supporto. Pulire le fessure a S.
-P07: piatta sul piatto, 100% di riempimento. Provarla nelle fessure prima del montaggio.
+P06: base sul piatto, nessun supporto. Le tasche a S sono sul lato piatto (soffitto a 2,2 mm, ponti corti).
+P07: piatta sul piatto, 100% di riempimento. Provarla nelle tasche prima del montaggio.
 Non e stata eseguita una simulazione dello slicer, ne una stampa fisica.
 
 MONTAGGIO
 1. Inserire P02 e P03 nelle sedi superiori di P01 (tre file di fori, Y = 25, 42,5, 60).
    Configurazione mostrata: P02 x=25..29 (pioli a X=27); P03 x=30..80 (pioli a X=42 e 72).
-   Appoggiare il fermo a L P08 a Sud di P02: perni nei fori X=22, Y=25 e 60.
-2. Appoggiare P06 nel mobile e inserire le due chiavi P07 nelle fessure a S.
+   Appoggiare il fermo a L P08 a Sud di P02: perni nei fori X=22, Y=25, 42,5 e 60.
+2. Appoggiare le due chiavi P07 sul piano e abbassarvi sopra P06: meta chiave entra
+   nelle tasche sotto la mensola, l'altra meta sporge dietro. Da sopra non si vedono.
    Abbassare P01 sopra P06: le sedi sotto la base ricevono l'altra meta delle chiavi.
    Per staccare P06 sollevare P01 di qualche millimetro.
 3. Fuori dal mobile, infilare P05 dall'alto dentro P04.
@@ -74,7 +75,7 @@ P01: terza fila di fori degli inserti a Y = 42,5 mm; P02 e P03 hanno i pioli cor
 P02 e P03 invertiti: P02 a X 25-29, P03 a X 30-80. Scarico della tasca allungato fino a X 80,3.
 P01: tasca del porta patch rifatta a portapenne: pareti alte 30 mm, gioco 1 mm per lato,
      svasatura 1,5 mm in cima e varco da 8 mm per l'asticella di P05. Supportare il fondo sporgente.
-P08: nuovo fermo a L (appoggio 6,7 x 2,4, ala alta 30 mm, lungo 77,3 mm) con due perni.
+P08: nuovo fermo a L (appoggio 6,7 x 2,4, ala alta 30 mm, lungo 77,3 mm) con tre perni.
 P02/P03: accorciati sul retro a Y = 77,3 mm; P03 senza fondo, lo chiude la parete di P01.
 P06: nasello con punta raccordata (R 4 mm) e spigoli smussati (1 mm), altezza 23,7 mm invariata.
 
@@ -90,3 +91,8 @@ STRUTTURA DELLA CARTELLA, COME SAKURA
 Radice: pezzi numerati, guida interattiva, mappa, istruzioni, file Blender.
 prove/: due provini di scorrimento e istruzioni.
 originale/: file precedenti, conservati; assieme v14 solo per riferimento.
+
+AGGIORNAMENTO 27 SETTEMBRE 2026
+P06: fessure a S non piu passanti; tasche aperte solo sotto, profonde 2,2 mm, piano intero sopra.
+P07: spessore ridotto da 2,8 a 2,0 mm per stare nella tasca di P06.
+P08: terzo perno a Y = 42,5 mm, nella fila centrale dei fori di P01.
