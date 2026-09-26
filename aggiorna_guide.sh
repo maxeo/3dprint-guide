@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Copia guida.html di ogni progetto e i file che la guida richiama (STL, SVG, testi, .blend).
+# Copia guida.html di ogni progetto e i file che la guida richiama (STL, SVG, PNG, testi, .blend).
+# I file oltre 95 MB restano fuori: GitHub rifiuta i file sopra i 100 MB.
 # Uso: ./aggiorna_guide.sh   (da D:\3D Print\3dprint-guide), poi commit e push.
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -8,6 +9,7 @@ cd "$(dirname "$0")"
 PROGETTI=(
   "sakura:Sakura"
   "supporto-tablet:Supporto per Tablet"
+  "gattolavello:GattoLavello/compatto"
 )
 
 for voce in "${PROGETTI[@]}"; do
@@ -16,8 +18,11 @@ for voce in "${PROGETTI[@]}"; do
   rm -rf "$slug"
   mkdir -p "$slug"
   cp "$sorgente/guida.html" "$slug/"
-  grep -oE "[\"'\`][A-Za-z0-9_./ -]+\.(stl|svg|txt|md|json|blend)[\"'\`]" "$sorgente/guida.html" \
+  grep -oE "[\"'\`][A-Za-z0-9_./ -]+\.(stl|svg|png|txt|md|json|blend)[\"'\`]" "$sorgente/guida.html" \
     | tr -d "\"'\`" | sort -u | while read -r file; do
+      if [ "$(stat -c %s "$sorgente/$file")" -gt 99614720 ]; then
+        echo "$slug: salto $file (oltre 95 MB)"; continue
+      fi
       mkdir -p "$slug/$(dirname "$file")"
       cp "$sorgente/$file" "$slug/$file"
     done
