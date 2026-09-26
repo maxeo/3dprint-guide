@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Guide di stampa 3D · maxeo</title>
+<script>try{const t=localStorage.getItem("tema-guide");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="description" content="Istruzioni di stampa e montaggio dei progetti 3D di maxeo, con vista 3D interattiva.">
 <style>
 :root{
@@ -12,9 +13,11 @@
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#161214;--surface:#211b1e;--ink:#f1eaed;--muted:#b2a4ab;--line:#352c31;
+  :root:not([data-theme="light"]){--bg:#161214;--surface:#211b1e;--ink:#f1eaed;--muted:#b2a4ab;--line:#352c31;
         --accent:#e38bab;--accent-soft:#3a2530;--stage:#120e10;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);color-scheme:dark}
 }
+:root[data-theme="dark"]{--bg:#161214;--surface:#211b1e;--ink:#f1eaed;--muted:#b2a4ab;--line:#352c31;
+        --accent:#e38bab;--accent-soft:#3a2530;--stage:#120e10;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 main{max-width:1080px;margin:0 auto;padding:56px 24px 72px}
@@ -22,28 +25,48 @@ header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-be
 .eyebrow{margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 h1{margin:0;font-size:clamp(30px,5vw,44px);line-height:1.1;letter-spacing:-.03em}
 .intro{margin:10px 0 0;max-width:520px;color:var(--muted)}
+.comandi{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .ordina{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.tema{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer}
+.tema:hover{border-color:var(--accent)}.tema svg{width:16px;height:16px;flex:none}
 .ordina select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 34px 8px 12px;appearance:none;cursor:pointer;
   background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
   background-position:calc(100% - 17px) 55%,calc(100% - 12px) 55%;background-size:5px 5px;background-repeat:no-repeat}
 .ordina select:hover{border-color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.cerca{position:relative;margin:0 0 20px}
+.cerca svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.cerca input{width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 14px 11px 42px;box-shadow:var(--shadow)}
+.cerca input::placeholder{color:var(--muted)}.cerca input:hover{border-color:var(--accent)}
+.esito{margin:-8px 0 16px;font-size:13px;color:var(--muted)}
+mark{background:var(--accent-soft);color:var(--accent);border-radius:3px;padding:0 1px;box-shadow:0 0 0 1px var(--accent)}
+.vuoto{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:18px}
 #guide{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:20px;margin:0;padding:0;list-style:none}
 .card{display:flex;flex-direction:column;height:100%;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;
   text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
 .card:hover{transform:translateY(-3px);border-color:var(--accent)}
 .stage{position:relative;aspect-ratio:16/10;background:var(--stage);overflow:hidden}
 .stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.stage .esploso{opacity:0;animation:alterna 7s ease-in-out infinite;animation-delay:var(--ritardo,0s)}
 .card:hover .stage img{transform:scale(1.04)}
 @keyframes alterna{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
 .vista{position:absolute;left:12px;bottom:12px;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:600;color:#fff;background:rgba(0,0,0,.45);backdrop-filter:blur(4px)}
-.vista.e{opacity:0;animation:alterna 7s ease-in-out infinite;animation-delay:var(--ritardo,0s)}
-.vista.m{animation:alterna-inv 7s ease-in-out infinite;animation-delay:var(--ritardo,0s)}
+.stage .esploso,.vista.e{opacity:0}
+/* con il mouse: montato fermo, esploso al passaggio (o al focus da tastiera) */
+@media (hover:hover){
+  .stage .esploso,.vista{transition:opacity .45s ease}
+  .card:hover .stage .esploso,.card:focus-visible .stage .esploso,.card:hover .vista.e,.card:focus-visible .vista.e{opacity:1}
+  .card:hover .vista.m,.card:focus-visible .vista.m{opacity:0}
+}
+/* touch: senza passaggio del mouse le due viste si alternano da sole */
+@media (hover:none){
+  .stage .esploso,.vista.e{animation:alterna 7s ease-in-out infinite;animation-delay:var(--ritardo,0s)}
+  .vista.m{animation:alterna-inv 7s ease-in-out infinite;animation-delay:var(--ritardo,0s)}
+}
 @keyframes alterna-inv{0%,38%{opacity:1}50%,88%{opacity:0}100%{opacity:1}}
 .body{display:flex;flex-direction:column;gap:6px;padding:18px 20px 20px;flex:1}
 .body h2{margin:0;font-size:19px;letter-spacing:-.01em}
 .body p{margin:0;font-size:14px;color:var(--muted)}
+.date{font-size:12px!important;color:var(--muted);opacity:.85;margin-top:2px!important}
 .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:12px}
 .chip{font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
 .apri{margin-left:auto;font-size:13px;font-weight:600;color:var(--accent)}
@@ -66,34 +89,43 @@ footer a{color:var(--accent)}
     <h1>Guide di stampa 3D</h1>
     <p class="intro">Istruzioni di stampa e montaggio, con il modello 3D da ruotare, esplodere e ispezionare pezzo per pezzo.</p>
   </div>
+  <div class="comandi">
+  <button class="tema" id="tema" type="button" hidden></button>
   <div class="ordina" hidden>
     <label for="ordine">Ordina per</label>
     <select id="ordine">
+      <option value="recenti" selected>Più recenti</option>
+      <option value="vecchi">Meno recenti</option>
+      <option value="aggiornate">Aggiornate di recente</option>
       <option value="az">Nome (A–Z)</option>
       <option value="za">Nome (Z–A)</option>
-      <option value="recenti">Più recenti</option>
-      <option value="vecchi">Meno recenti</option>
+      <option value="pochi">Meno pezzi</option>
+      <option value="tanti">Più pezzi</option>
     </select>
   </div>
+  </div>
 </header>
+<div class="cerca" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="cerca" type="search" placeholder="Cerca per nome, descrizione, pezzi…" aria-label="Cerca tra le guide" autocomplete="off"></div>
+<p class="esito" id="esito" aria-live="polite"></p>
 <ul id="guide">
-  <li data-data="2026-09-15" style="--ritardo:0s"><a class="card" href="gattolavello/guida.html">
+  <li data-slug="gattolavello" data-creata="2026-09-15" data-aggiornata="2026-09-26" data-pezzi="7" data-perni="0" style="--ritardo:0s"><a class="card" href="gattolavello/guida.html">
     <div class="stage"><img src="anteprime/gattolavello_montato.png" alt="GattoLavello montato" loading="lazy"><img class="esploso" src="anteprime/gattolavello_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
-    <div class="body"><h2>GattoLavello</h2><p>Porta-saponi con gatto: vasca con scarico, grate e ripiano, tutto a incastro.</p>
+    <div class="body"><h2>GattoLavello</h2><p>Porta-saponi con gatto: vasca con scarico, grate e ripiano, tutto a incastro.</p><p class="date"></p>
     <div class="meta"><span class="chip">7 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
-  <li data-data="2026-09-12" style="--ritardo:-1.75s"><a class="card" href="sakura/guida.html">
-    <div class="stage"><img src="anteprime/sakura_montato.png" alt="Sakura montato" loading="lazy"><img class="esploso" src="anteprime/sakura_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
-    <div class="body"><h2>Sakura</h2><p>Pannello decorativo 410 × 520 mm in moduli da 7 mm.</p>
-    <div class="meta"><span class="chip">6 moduli</span><span class="chip">21 perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
-  <li data-data="2026-09-13" style="--ritardo:-3.5s"><a class="card" href="skinkocchiali/guida.html">
+  <li data-slug="skinkocchiali" data-creata="2026-09-13" data-aggiornata="2026-09-14" data-pezzi="8" data-perni="0" style="--ritardo:-3.5s"><a class="card" href="skinkocchiali/guida.html">
     <div class="stage"><img src="anteprime/skinkocchiali_montato.png" alt="SkinkOcchiali montato" loading="lazy"><img class="esploso" src="anteprime/skinkocchiali_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
-    <div class="body"><h2>SkinkOcchiali</h2><p>Modulo porta occhiali e porta patch con vassoio che si solleva.</p>
-    <div class="meta"><span class="chip">8 pezzi</span><span class="chip">rev. 14</span><span class="apri">Apri la guida →</span></div></div></a></li>
-  <li data-data="2026-09-13" style="--ritardo:-5.25s"><a class="card" href="supporto-tablet/guida.html">
+    <div class="body"><h2>SkinkOcchiali</h2><p>Modulo porta occhiali e porta patch con vassoio che si solleva.</p><p class="date"></p>
+    <div class="meta"><span class="chip">8 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
+  <li data-slug="supporto-tablet" data-creata="2026-09-11" data-aggiornata="2026-09-11" data-pezzi="9" data-perni="0" style="--ritardo:-5.25s"><a class="card" href="supporto-tablet/guida.html">
     <div class="stage"><img src="anteprime/supporto-tablet_montato.png" alt="Supporto per tablet montato" loading="lazy"><img class="esploso" src="anteprime/supporto-tablet_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
-    <div class="body"><h2>Supporto per tablet</h2><p>Supporto V7 alto 22 cm, pezzi a incastro senza perni.</p>
-    <div class="meta"><span class="chip">9 pezzi</span><span class="chip">V7</span><span class="apri">Apri la guida →</span></div></div></a></li>
+    <div class="body"><h2>Supporto per tablet</h2><p>Supporto alto 22 cm con base a tre piedi, pezzi a incastro.</p><p class="date"></p>
+    <div class="meta"><span class="chip">9 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
+  <li data-slug="sakura" data-creata="2026-09-12" data-aggiornata="2026-09-14" data-pezzi="6" data-perni="21" style="--ritardo:-1.75s"><a class="card" href="sakura/guida.html">
+    <div class="stage"><img src="anteprime/sakura_montato.png" alt="Sakura montato" loading="lazy"><img class="esploso" src="anteprime/sakura_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
+    <div class="body"><h2>Sakura</h2><p>Pannello decorativo 410 × 520 mm in moduli da 7 mm.</p><p class="date"></p>
+    <div class="meta"><span class="chip">6 moduli</span><span class="chip">21 perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
 </ul>
+<p class="vuoto" id="vuoto" hidden>Nessuna guida contiene tutte le parole cercate.</p>
 <footer>Ogni guida funziona anche offline: si scarica con i suoi STL dalla stessa cartella.</footer>
 </main>
 <script>
@@ -104,17 +136,81 @@ footer a{color:var(--accent)}
   const criteri = {
     az: perNome,
     za: (a, b) => perNome(b, a),
-    recenti: (a, b) => b.dataset.data.localeCompare(a.dataset.data) || perNome(a, b),
-    vecchi: (a, b) => a.dataset.data.localeCompare(b.dataset.data) || perNome(a, b),
+    recenti: (a, b) => b.dataset.creata.localeCompare(a.dataset.creata) || perNome(a, b),
+    vecchi: (a, b) => a.dataset.creata.localeCompare(b.dataset.creata) || perNome(a, b),
+    aggiornate: (a, b) => b.dataset.aggiornata.localeCompare(a.dataset.aggiornata) || b.dataset.creata.localeCompare(a.dataset.creata) || perNome(a, b),
+    pochi: (a, b) => a.dataset.pezzi - b.dataset.pezzi || perNome(a, b),
+    tanti: (a, b) => b.dataset.pezzi - a.dataset.pezzi || perNome(a, b),
   };
+  const giorno = d => new Date(d + 'T12:00:00').toLocaleDateString('it-IT', {day: 'numeric', month: 'short', year: 'numeric'});
+  for (const li of lista.children) {
+    const c = li.dataset.creata, a = li.dataset.aggiornata;
+    li.querySelector('.date').textContent = `Creata il ${giorno(c)}` + (a && a !== c ? ` · aggiornata il ${giorno(a)}` : '');
+  }
   const ordina = () => [...lista.children].sort(criteri[scelta.value]).forEach(li => lista.appendChild(li));
-  try { const s = localStorage.getItem('ordine-guide'); if (s in criteri) scelta.value = s; } catch (e) {}
+  try { const s = localStorage.getItem('ordine-guide-v2'); if (s in criteri) scelta.value = s; } catch (e) {}
   scelta.addEventListener('change', () => {
-    try { localStorage.setItem('ordine-guide', scelta.value); } catch (e) {}
+    try { localStorage.setItem('ordine-guide-v2', scelta.value); } catch (e) {}
     ordina();
   });
   scelta.closest('.ordina').hidden = false;
   ordina();
+
+  // tema: Sistema (predefinito) -> Chiaro -> Scuro
+  const temi = [
+    {id: 'system', nome: 'Sistema', icona: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>'},
+    {id: 'light', nome: 'Chiaro', icona: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'},
+    {id: 'dark', nome: 'Scuro', icona: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>'},
+  ];
+  const bottone = document.getElementById('tema');
+  let tema = document.documentElement.dataset.theme || 'system';
+  const mostra = () => {
+    const t = temi.find(x => x.id === tema), dopo = temi[(temi.indexOf(t) + 1) % temi.length];
+    bottone.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${t.icona}</svg>Tema: ${t.nome}`;
+    bottone.setAttribute('aria-label', `Tema ${t.nome.toLowerCase()}. Passa a ${dopo.nome.toLowerCase()}`);
+  };
+  bottone.addEventListener('click', () => {
+    tema = temi[(temi.findIndex(x => x.id === tema) + 1) % temi.length].id;
+    if (tema === 'system') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = tema;
+    try { if (tema === 'system') localStorage.removeItem('tema-guide'); else localStorage.setItem('tema-guide', tema); } catch (e) {}
+    mostra();
+  });
+  bottone.hidden = false;
+  mostra();
+
+  // ricerca: tutte le parole devono comparire, in qualsiasi ordine; ignora maiuscole e accenti
+  const campo = document.getElementById('cerca'), esito = document.getElementById('esito'), vuoto = document.getElementById('vuoto');
+  const piega = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const testi = [...lista.querySelectorAll('h2, .body p:not(.date), .chip')];
+  testi.forEach(el => el.dataset.testo = el.textContent);
+  const evidenzia = (el, parole) => {
+    const t = el.dataset.testo, segni = new Array(t.length).fill(false);
+    // testo "piegato" carattere per carattere, cosi' le posizioni restano quelle dell'originale
+    const p = [...t].map(piega).map(c => c.length === 1 ? c : c[0] || ' ').join('');
+    for (const w of parole) for (let i = p.indexOf(w); i >= 0; i = p.indexOf(w, i + 1)) segni.fill(true, i, i + w.length);
+    const esc = c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'}[c] || c);
+    let html = '', aperto = false;
+    [...t].forEach((c, i) => {
+      if (segni[i] && !aperto) { html += '<mark>'; aperto = true }
+      if (!segni[i] && aperto) { html += '</mark>'; aperto = false }
+      html += esc(c);
+    });
+    el.innerHTML = html + (aperto ? '</mark>' : '');
+  };
+  const filtra = () => {
+    const parole = piega(campo.value).split(/\s+/).filter(Boolean);
+    let n = 0;
+    for (const li of lista.children) {
+      const tutto = piega([...li.querySelectorAll('h2, .body p:not(.date), .chip')].map(e => e.dataset.testo).join(' '));
+      const ok = parole.every(w => tutto.includes(w));
+      li.hidden = !ok; if (ok) n++;
+    }
+    testi.forEach(el => parole.length ? evidenzia(el, parole) : (el.textContent = el.dataset.testo));
+    vuoto.hidden = n > 0;
+    esito.textContent = parole.length ? (n === 1 ? '1 guida trovata' : `${n} guide trovate`) : '';
+  };
+  campo.addEventListener('input', filtra);
+  campo.closest('.cerca').hidden = false;
 })();
 </script>
 </body>
