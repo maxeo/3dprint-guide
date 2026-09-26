@@ -9,7 +9,7 @@ cd "$(dirname "$0")"
 PROGETTI=(
   "sakura:Sakura"
   "supporto-tablet:Supporto per Tablet"
-  "gattolavello:GattoLavello/compatto"
+  "gattolavello:GattoLavello"
 )
 
 for voce in "${PROGETTI[@]}"; do
