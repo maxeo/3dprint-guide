@@ -1,0 +1,320 @@
+{
+  "note": "Tenoni con gancio a L e sedi cieche; longherone basso, guida e fermo in un unico pezzo; maniglia integrata. Pezzi entro un piatto 230 x 230 mm. Verificare giochi e carico con provini.",
+  "print_bed_mm": 230,
+  "unit": "mm",
+  "source_blend": "D:\\3D Print\\Organizer Modulare\\Organizer_Modulare_Parametrico.blend",
+  "parts": [
+    {
+      "id": "P01",
+      "name": "Cassetto_L1",
+      "file": "stl/P01_Cassetto_L1.stl",
+      "assembled_bounds": [
+        [
+          -102.5,
+          102.5
+        ],
+        [
+          -122.8611,
+          102.0
+        ],
+        [
+          11.0,
+          59.2
+        ]
+      ],
+      "dimensions_mm": [
+        205.0,
+        224.8611,
+        48.2
+      ],
+      "triangles": 2622,
+      "copies": 3
+    },
+    {
+      "id": "P02",
+      "name": "Divisorio_longitudinale",
+      "file": "stl/P02_Divisorio_longitudinale.stl",
+      "assembled_bounds": [
+        [
+          -1.2,
+          1.2
+        ],
+        [
+          -105.6,
+          99.6
+        ],
+        [
+          14.2,
+          44.2
+        ]
+      ],
+      "dimensions_mm": [
+        2.4,
+        205.2,
+        30.0
+      ],
+      "triangles": 156,
+      "copies": 3
+    },
+    {
+      "id": "P03",
+      "name": "Longherone_D_alta",
+      "file": "stl/P03_Longherone_D_alta.stl",
+      "assembled_bounds": [
+        [
+          109.0,
+          119.0
+        ],
+        [
+          -106.0,
+          106.0
+        ],
+        [
+          91.0,
+          99.0
+        ]
+      ],
+      "dimensions_mm": [
+        10.0,
+        212.0,
+        8.0
+      ],
+      "triangles": 96,
+      "copies": 3
+    },
+    {
+      "id": "P04",
+      "name": "Longherone_S_alta",
+      "file": "stl/P04_Longherone_S_alta.stl",
+      "assembled_bounds": [
+        [
+          -119.0,
+          -109.0
+        ],
+        [
+          -106.0,
+          106.0
+        ],
+        [
+          91.0,
+          99.0
+        ]
+      ],
+      "dimensions_mm": [
+        10.0,
+        212.0,
+        8.0
+      ],
+      "triangles": 96,
+      "copies": 3
+    },
+    {
+      "id": "P05",
+      "name": "Longherone_guida_D",
+      "file": "stl/P05_Longherone_guida_D.stl",
+      "assembled_bounds": [
+        [
+          98.0,
+          119.0
+        ],
+        [
+          -106.0,
+          106.0
+        ],
+        [
+          6.5,
+          21.0
+        ]
+      ],
+      "dimensions_mm": [
+        21.0,
+        212.0,
+        14.5
+      ],
+      "triangles": 216,
+      "copies": 3
+    },
+    {
+      "id": "P06",
+      "name": "Longherone_guida_S",
+      "file": "stl/P06_Longherone_guida_S.stl",
+      "assembled_bounds": [
+        [
+          -119.0,
+          -98.0
+        ],
+        [
+          -106.0,
+          106.0
+        ],
+        [
+          6.5,
+          21.0
+        ]
+      ],
+      "dimensions_mm": [
+        21.0,
+        212.0,
+        14.5
+      ],
+      "triangles": 212,
+      "copies": 3
+    },
+    {
+      "id": "P07",
+      "name": "Montante_DF_L1",
+      "file": "stl/P07_Montante_DF_L1.stl",
+      "assembled_bounds": [
+        [
+          103.0,
+          125.0
+        ],
+        [
+          -120.0,
+          -98.0
+        ],
+        [
+          0.0,
+          112.0
+        ]
+      ],
+      "dimensions_mm": [
+        22.0,
+        22.0,
+        112.0
+      ],
+      "triangles": 116,
+      "copies": 3
+    },
+    {
+      "id": "P08",
+      "name": "Montante_DR_L1",
+      "file": "stl/P08_Montante_DR_L1.stl",
+      "assembled_bounds": [
+        [
+          103.0,
+          125.0
+        ],
+        [
+          98.0,
+          120.0
+        ],
+        [
+          0.0,
+          112.0
+        ]
+      ],
+      "dimensions_mm": [
+        22.0,
+        22.0,
+        112.0
+      ],
+      "triangles": 188,
+      "copies": 3
+    },
+    {
+      "id": "P09",
+      "name": "Montante_SF_L1",
+      "file": "stl/P09_Montante_SF_L1.stl",
+      "assembled_bounds": [
+        [
+          -125.0,
+          -103.0
+        ],
+        [
+          -120.0,
+          -98.0
+        ],
+        [
+          0.0,
+          112.0
+        ]
+      ],
+      "dimensions_mm": [
+        22.0,
+        22.0,
+        112.0
+      ],
+      "triangles": 116,
+      "copies": 3
+    },
+    {
+      "id": "P10",
+      "name": "Montante_SR_L1",
+      "file": "stl/P10_Montante_SR_L1.stl",
+      "assembled_bounds": [
+        [
+          -125.0,
+          -103.0
+        ],
+        [
+          98.0,
+          120.0
+        ],
+        [
+          0.0,
+          112.0
+        ]
+      ],
+      "dimensions_mm": [
+        22.0,
+        22.0,
+        112.0
+      ],
+      "triangles": 188,
+      "copies": 3
+    },
+    {
+      "id": "P11",
+      "name": "Traversa_posteriore_alta",
+      "file": "stl/P11_Traversa_posteriore_alta.stl",
+      "assembled_bounds": [
+        [
+          -111.0,
+          111.0
+        ],
+        [
+          104.0,
+          114.0
+        ],
+        [
+          80.0,
+          88.0
+        ]
+      ],
+      "dimensions_mm": [
+        222.0,
+        10.0,
+        8.0
+      ],
+      "triangles": 96,
+      "copies": 3
+    },
+    {
+      "id": "P12",
+      "name": "Traversa_posteriore_bassa",
+      "file": "stl/P12_Traversa_posteriore_bassa.stl",
+      "assembled_bounds": [
+        [
+          -111.0,
+          111.0
+        ],
+        [
+          104.0,
+          114.0
+        ],
+        [
+          18.0,
+          26.0
+        ]
+      ],
+      "dimensions_mm": [
+        222.0,
+        10.0,
+        8.0
+      ],
+      "triangles": 96,
+      "copies": 3
+    }
+  ]
+}

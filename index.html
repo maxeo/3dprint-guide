@@ -78,7 +78,23 @@ footer a{color:var(--accent)}
   .stage .esploso{animation:none}.card:hover .stage .esploso{opacity:1}
   .vista.e,.vista.m{animation:none}.card:hover .vista.e{opacity:1}.card:hover .vista.m{opacity:0}
 }
-@media (max-width:520px){main{padding:36px 16px 56px}header{align-items:flex-start}}
+.stampante{position:relative}
+.stampante-pop{position:absolute;right:0;top:calc(100% + 8px);z-index:20;width:300px;max-width:calc(100vw - 32px);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 16px 40px rgba(0,0,0,.25);font-size:14px;line-height:1.4}
+.stampante-pop>b{font-size:15px}.stampante-pop p{margin:4px 0 10px;font-size:12.5px;color:var(--muted)}
+.stampante-xyz{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.stampante-xyz label{display:flex;flex-direction:column;gap:3px;font-size:11px;font-weight:800;color:var(--muted)}
+.stampante-pop input,.stampante-pop select{width:100%;height:34px;font:inherit;font-size:13px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:4px 8px}
+.stampante-pop input{font-weight:700;font-variant-numeric:tabular-nums}.stampante-pop select{margin-top:8px}
+.stampante-pop .esito-st{margin:10px 0 0}.stampante-pop .esito-st.fuori{color:#d9573f;font-weight:600}
+.tema b{font-variant-numeric:tabular-nums}
+.tema i{display:none;width:8px;height:8px;border-radius:50%;background:#d9573f}.tema.fuori{border-color:#d9573f}.tema.fuori i{display:inline-block}
+.chip.fuori{background:#d9573f;color:#fff}
+@media (max-width:520px){
+  main{padding:36px 16px 56px}header{align-items:stretch}header>div:first-child{flex-basis:100%}
+  .comandi{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:8px}
+  .comandi .tema{justify-content:center;width:100%;min-height:42px}
+  .ordina{grid-column:1/-1}.ordina select{flex:1;min-height:42px}
+  .stampante-pop{right:0}
+}
 </style>
 </head>
 <body>
@@ -91,6 +107,10 @@ footer a{color:var(--accent)}
   </div>
   <div class="comandi">
   <button class="tema" id="tema" type="button" hidden></button>
+  <div class="stampante" hidden><button class="tema" id="stampante" type="button" aria-expanded="false" aria-controls="stampante-pop"></button>
+    <div class="stampante-pop" id="stampante-pop" hidden><b>Area di stampa</b><p>Dimensioni massime della tua stampante, in mm. Vale anche dentro ogni guida: le schede segnalano i progetti con pezzi che non entrano.</p>
+    <div class="stampante-xyz"><label>X<input data-k="x" type="number" min="50" max="2000" step="1" inputmode="numeric"></label><label>Y<input data-k="y" type="number" min="50" max="2000" step="1" inputmode="numeric"></label><label>Z<input data-k="z" type="number" min="50" max="2000" step="1" inputmode="numeric"></label></div>
+    <select aria-label="Stampanti comuni"></select><p class="esito-st" aria-live="polite"></p></div></div>
   <div class="ordina" hidden>
     <label for="ordine">Ordina per</label>
     <select id="ordine">
@@ -108,22 +128,26 @@ footer a{color:var(--accent)}
 <div class="cerca" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="cerca" type="search" placeholder="Cerca per nome, descrizione, pezzi…" aria-label="Cerca tra le guide" autocomplete="off"></div>
 <p class="esito" id="esito" aria-live="polite"></p>
 <ul id="guide">
-  <li data-slug="gattolavello" data-creata="2026-09-15" data-aggiornata="2026-09-26" data-pezzi="7" data-perni="0" style="--ritardo:0s"><a class="card" href="gattolavello/guida.html">
+  <li data-slug="gattolavello" data-dims="[[109.3,133.1,193.5],[134.3,144,24.2],[86.4,138,24.2],[124.4,111.7,218.3],[80,120,4],[105,120,4],[230,126.4,15.2]]" data-creata="2026-09-15" data-aggiornata="2026-09-26" data-pezzi="7" data-perni="0" style="--ritardo:0s"><a class="card" href="gattolavello/guida.html">
     <div class="stage"><img src="anteprime/gattolavello_montato.png" alt="GattoLavello montato" loading="lazy"><img class="esploso" src="anteprime/gattolavello_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
     <div class="body"><h2>GattoLavello</h2><p>Porta-saponi con gatto: vasca con scarico, grate e ripiano, tutto a incastro.</p><p class="date"></p>
     <div class="meta"><span class="chip">7 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
-  <li data-slug="skinkocchiali" data-creata="2026-09-13" data-aggiornata="2026-09-27" data-pezzi="8" data-perni="0" style="--ritardo:-3.5s"><a class="card" href="skinkocchiali/guida.html">
+  <li data-slug="skinkocchiali" data-dims="[[115,100,218.7],[4,57.3,180.8],[50,77.3,180.8],[70,126,6.4],[66.4,29.6,14.1],[142,46.1,23.7],[16,19,2],[16,19,2],[6.7,77.3,33.5]]" data-creata="2026-09-13" data-aggiornata="2026-09-27" data-pezzi="8" data-perni="0" style="--ritardo:-3.5s"><a class="card" href="skinkocchiali/guida.html">
     <div class="stage"><img src="anteprime/skinkocchiali_montato.png" alt="SkinkOcchiali montato" loading="lazy"><img class="esploso" src="anteprime/skinkocchiali_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
     <div class="body"><h2>SkinkOcchiali</h2><p>Modulo porta occhiali e porta patch con vassoio che si solleva.</p><p class="date"></p>
     <div class="meta"><span class="chip">8 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
-  <li data-slug="supporto-tablet" data-creata="2026-09-11" data-aggiornata="2026-09-11" data-pezzi="9" data-perni="0" style="--ritardo:-5.25s"><a class="card" href="supporto-tablet/guida.html">
+  <li data-slug="supporto-tablet" data-dims="[[145.9,51.9,98],[60,46,21],[150.7,152,26],[150.7,152,26],[141.9,33.5,170],[122.9,83.5,170],[122.9,57.8,170],[78.2,82.6,56.7],[78.2,82.6,56.7]]" data-creata="2026-09-11" data-aggiornata="2026-09-11" data-pezzi="9" data-perni="0" style="--ritardo:-5.25s"><a class="card" href="supporto-tablet/guida.html">
     <div class="stage"><img src="anteprime/supporto-tablet_montato.png" alt="Supporto per tablet montato" loading="lazy"><img class="esploso" src="anteprime/supporto-tablet_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
     <div class="body"><h2>Supporto per tablet</h2><p>Supporto alto 22 cm con base a tre piedi, pezzi a incastro.</p><p class="date"></p>
     <div class="meta"><span class="chip">9 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
-  <li data-slug="sakura" data-creata="2026-09-12" data-aggiornata="2026-09-14" data-pezzi="6" data-perni="21" style="--ritardo:-1.75s"><a class="card" href="sakura/guida.html">
+  <li data-slug="sakura" data-dims="[[205,172,7],[205,172,7],[205,174,7],[205,174,7],[205,174,7],[205,174,7]]" data-creata="2026-09-12" data-aggiornata="2026-09-14" data-pezzi="6" data-perni="21" style="--ritardo:-1.75s"><a class="card" href="sakura/guida.html">
     <div class="stage"><img src="anteprime/sakura_montato.png" alt="Sakura montato" loading="lazy"><img class="esploso" src="anteprime/sakura_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
     <div class="body"><h2>Sakura</h2><p>Pannello decorativo 410 × 520 mm in moduli da 7 mm.</p><p class="date"></p>
     <div class="meta"><span class="chip">6 moduli</span><span class="chip">21 perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
+  <li data-slug="organizer" data-dims="[[205,224.9,48.2],[2.4,205.2,30],[10,212,8],[10,212,8],[21,212,14.5],[21,212,14.5],[22,22,112],[22,22,112],[22,22,112],[22,22,112],[222,10,8],[222,10,8]]" data-creata="2026-09-26" data-aggiornata="2026-09-27" data-pezzi="12" data-perni="0" style="--ritardo:-7s"><a class="card" href="organizer/guida.html">
+    <div class="stage"><img src="anteprime/organizer_montato.png" alt="Organizer modulare montato" loading="lazy"><img class="esploso" src="anteprime/organizer_esploso.png" alt="" loading="lazy"><span class="vista m" aria-hidden="true">Montato</span><span class="vista e" aria-hidden="true">Esploso</span></div>
+    <div class="body"><h2>Organizer modulare</h2><p>Cassettiera impilabile 250 × 240 mm, configurabile nella guida.</p><p class="date"></p>
+    <div class="meta"><span class="chip">12 pezzi</span><span class="chip">senza perni</span><span class="apri">Apri la guida →</span></div></div></a></li>
 </ul>
 <p class="vuoto" id="vuoto" hidden>Nessuna guida contiene tutte le parole cercate.</p>
 <footer>Ogni guida funziona anche offline: si scarica con i suoi STL dalla stessa cartella.</footer>
@@ -178,10 +202,48 @@ footer a{color:var(--accent)}
   bottone.hidden = false;
   mostra();
 
+  // area di stampa: stessa chiave e stessi modelli del pulsante Stampante delle guide (stampante.py)
+  const KEY = 'stampante-guide', DEF = {x: 230, y: 230, z: 250};
+  const MODELLI = [['Comune 230 × 230', 230, 230, 250], ['Creality Ender-3', 220, 220, 250], ['Prusa MK4', 250, 210, 220], ['Bambu Lab A1 / P1S / X1', 256, 256, 256], ['Bambu Lab A1 mini', 180, 180, 180]];
+  const PERM = [[0, 1, 2], [0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]];
+  const fmt = v => Number(v).toLocaleString('it-IT', {maximumFractionDigits: 1});
+  const leggi = () => { try { const b = JSON.parse(localStorage.getItem(KEY) || 'null'); if (b && ['x', 'y', 'z'].every(k => b[k] > 0)) return b; } catch (e) {} return {...DEF}; };
+  const entra = (d, b) => PERM.some(o => o.every((a, k) => d[a] <= [b.x, b.y, b.z][k] + 1e-6));
+  const stBtn = document.getElementById('stampante'), stPop = document.getElementById('stampante-pop');
+  const stInput = [...stPop.querySelectorAll('input')], stSel = stPop.querySelector('select'), stEsito = stPop.querySelector('.esito-st');
+  stSel.innerHTML = '<option value="">Stampanti comuni…</option>' + MODELLI.map((m, i) => `<option value="${i}">${m[0]} · ${m[1]} × ${m[2]} × ${m[3]}</option>`).join('');
+  const controlla = () => {
+    const b = leggi(), fuori = [];
+    stInput.forEach(i => { if (document.activeElement !== i) i.value = b[i.dataset.k]; });
+    for (const li of lista.children) {
+      let dims = []; try { dims = JSON.parse(li.dataset.dims || '[]'); } catch (e) {}
+      const n = dims.filter(d => !entra(d, b)).length, meta = li.querySelector('.meta');
+      let chip = meta.querySelector('.chip.fuori');
+      if (n && !chip) { chip = document.createElement('span'); chip.className = 'chip fuori'; meta.insertBefore(chip, meta.querySelector('.apri')); }
+      if (chip) { if (n) chip.textContent = n === 1 ? '1 pezzo non entra' : `${n} pezzi non entrano`; else chip.remove(); }
+      if (n) fuori.push(nome(li));
+    }
+    stBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 21h10M9 17v4M15 17v4"/></svg>Stampante <b>${fmt(b.x)} × ${fmt(b.y)}</b><i></i>`;
+    stBtn.classList.toggle('fuori', fuori.length > 0);
+    stBtn.title = `Area di stampa ${fmt(b.x)} × ${fmt(b.y)} × ${fmt(b.z)} mm`;
+    stEsito.textContent = fuori.length ? `Pezzi fuori misura in: ${fuori.join(', ')}.` : 'Tutti i pezzi di tutte le guide entrano.';
+    stEsito.classList.toggle('fuori', fuori.length > 0);
+  };
+  const salva = b => { try { localStorage.setItem(KEY, JSON.stringify(b)); } catch (e) {} controlla(); };
+  stInput.forEach(i => i.addEventListener('input', () => { const v = Number(i.value); if (v > 0) salva({...leggi(), [i.dataset.k]: v}); }));
+  stSel.addEventListener('change', () => { const m = MODELLI[stSel.value]; if (m) salva({x: m[1], y: m[2], z: m[3]}); stSel.value = ''; stInput.forEach(i => i.blur()); controlla(); });
+  const apri = on => { stPop.hidden = !on; stBtn.setAttribute('aria-expanded', on); };
+  stBtn.addEventListener('click', e => { e.stopPropagation(); apri(stPop.hidden); });
+  document.addEventListener('click', e => { if (!stPop.hidden && !stBtn.parentNode.contains(e.target)) apri(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !stPop.hidden) { apri(false); stBtn.focus(); } });
+  addEventListener('storage', e => { if (e.key === KEY) controlla(); });
+  stBtn.parentNode.hidden = false;
+  controlla();
+
   // ricerca: tutte le parole devono comparire, in qualsiasi ordine; ignora maiuscole e accenti
   const campo = document.getElementById('cerca'), esito = document.getElementById('esito'), vuoto = document.getElementById('vuoto');
   const piega = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const testi = [...lista.querySelectorAll('h2, .body p:not(.date), .chip')];
+  const testi = [...lista.querySelectorAll('h2, .body p:not(.date), .chip:not(.fuori)')];
   testi.forEach(el => el.dataset.testo = el.textContent);
   const evidenzia = (el, parole) => {
     const t = el.dataset.testo, segni = new Array(t.length).fill(false);
@@ -201,7 +263,7 @@ footer a{color:var(--accent)}
     const parole = piega(campo.value).split(/\s+/).filter(Boolean);
     let n = 0;
     for (const li of lista.children) {
-      const tutto = piega([...li.querySelectorAll('h2, .body p:not(.date), .chip')].map(e => e.dataset.testo).join(' '));
+      const tutto = piega([...li.querySelectorAll('h2, .body p:not(.date), .chip:not(.fuori)')].map(e => e.dataset.testo).join(' '));
       const ok = parole.every(w => tutto.includes(w));
       li.hidden = !ok; if (ok) n++;
     }

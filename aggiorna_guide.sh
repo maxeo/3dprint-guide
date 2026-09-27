@@ -11,6 +11,7 @@ PROGETTI=(
   "supporto-tablet:Supporto per Tablet"
   "gattolavello:GattoLavello"
   "skinkocchiali:Modulo SkinkOcchiali"
+  "organizer:Organizer Modulare"
 )
 
 for voce in "${PROGETTI[@]}"; do
@@ -21,12 +22,17 @@ for voce in "${PROGETTI[@]}"; do
   cp "$sorgente/guida.html" "$slug/"
   grep -oE "[\"'\`][A-Za-z0-9_./ -]+\.(stl|svg|png|txt|md|json|blend)[\"'\`]" "$sorgente/guida.html" \
     | tr -d "\"'\`" | sort -u | while read -r file; do
+      # nomi citati nella guida ma non file del progetto (es. file interni allo ZIP generato)
+      [ -f "$sorgente/$file" ] || continue
       if [ "$(stat -c %s "$sorgente/$file")" -gt 99614720 ]; then
         echo "$slug: salto $file (oltre 95 MB)"; continue
       fi
       mkdir -p "$slug/$(dirname "$file")"
       cp "$sorgente/$file" "$slug/$file"
     done
+  # misure dei pezzi nella scheda, per il pulsante Stampante dell'indice (richiede Node)
+  dims="$(node dimensioni.js "$slug/guida.html")"
+  sed -i -E "s|(data-slug=\"$slug\"[^>]*data-dims=\")[^\"]*|\1$dims|" index.html
   # data di ultimo aggiornamento nella scheda dell'indice: conta solo il contenuto dei file 3D
   # (STL/3MF), non testi o spostamenti. Per ogni file si cerca il commit in cui e' comparso
   # quel contenuto preciso; se ci sono file 3D modificati e non committati vale oggi.

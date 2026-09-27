@@ -9,6 +9,7 @@ https://maxeo.github.io/3dprint-guide/
 | Supporto per tablet | https://maxeo.github.io/3dprint-guide/supporto-tablet/guida.html |
 | GattoLavello compatto | https://maxeo.github.io/3dprint-guide/gattolavello/guida.html |
 | SkinkOcchiali | https://maxeo.github.io/3dprint-guide/skinkocchiali/guida.html |
+| Organizer modulare | https://maxeo.github.io/3dprint-guide/organizer/guida.html |
 
 I sorgenti dei progetti stanno nei repo privati `3dprint-*`. Le cartelle qui sono copie:
 per aggiornarle eseguire `./aggiorna_guide.sh`, poi commit e push.
