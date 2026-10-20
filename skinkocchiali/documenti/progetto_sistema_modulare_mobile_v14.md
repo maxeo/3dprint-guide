@@ -665,3 +665,11 @@ Verifiche digitali: ogni pezzo è un solido chiuso e connesso; le 36 coppie di s
 - **Chiave P07.** Spessore ridotto da 2,8 a 2 mm; resta 0,2 mm di gioco verticale nella tasca di P06. La sede sotto la base di P01 resta profonda 3,1 mm.
 - **Montaggio.** Le chiavi si appoggiano sul piano, P06 si abbassa sopra, poi P01.
 - **Fermo a L (P08).** Tre perni Ø3 nei fori X = 22, Y = 25, 42,5 e 60 mm, uno per ogni fila di P01.
+
+
+AGGIORNAMENTO 1 OTTOBRE 2026
+Altezza totale aumentata da 218,7 a 220,3 mm (+1,6 mm).
+Allungati solo i quattro fermi superiori di P01 e i due fermi corrispondenti
+nel provino T04_Fetta_Sud_completa.stl, ora alto 220,3 mm.
+Quota della grata, base, incastri e altri pezzi invariati. T01, T02 e T03 invariati.
+La misura interna del mobile di 219 mm nei documenti precedenti non e stata aggiornata: aumento del modulo confermato dall'utente.

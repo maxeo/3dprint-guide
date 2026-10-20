@@ -13,3 +13,108 @@ Inserire T02 dall'alto in T01, con il collegamento nella fessura frontale.
 Verificare una corsa breve a mano senza forzare. Gioco CAD: 0,3 mm per lato.
 I provini verificano l'accoppiamento trasversale; la flessione dell'asta definitiva
 e la corsa completa vanno provate sui componenti interi.
+
+PROVINO DELLA BASE DI P01 - stampare una copia
+
+T03_Segmento_base_3_fori.stl: striscia della base di P01 dal bordo Sud (X 0-16 mm),
+profonda quanto la base (80 mm), alta 7,5 mm. Contiene le tre file di fori
+Ø3,4 per i primi tre fori (X = 2, 7, 12 mm), le due tasche a meandro sotto la
+base per la chiave P07 e l'attacco della parete posteriore.
+Stampare con il fondo sul piatto. Provare i perni di P02/P03/P08 nei fori e
+la chiave P07 nelle tasche inferiori.
+
+T04_Fetta_Sud_completa.stl: fetta ridotta del lato Sud (X 0-8 mm), a tutta
+altezza (220,3 mm): base, parete posteriore, striscia della grata e due
+fermi superiori ridotti a 8 mm di larghezza. Profondita totale 100 mm.
+Stampare in verticale come P01, con supporti sotto la grata che sporge davanti.
+
+
+AGGIORNAMENTO 1 OTTOBRE 2026
+Altezza totale aumentata da 218,7 a 220,3 mm (+1,6 mm).
+Allungati solo i quattro fermi superiori di P01 e i due fermi corrispondenti
+nel provino T04_Fetta_Sud_completa.stl, ora alto 220,3 mm.
+Quota della grata, base, incastri e altri pezzi invariati. T01, T02 e T03 invariati.
+
+
+AGGIORNAMENTO 1 OTTOBRE 2026 - PROVINO T04 PIU SOTTILE
+T04 ridotto da 16 a 8 mm di larghezza: fetta X = 0-8 mm,
+profondita 100 mm (grata compresa), altezza 220,3 mm.
+La geometria e tagliata, non scalata. T03 e il modulo finale restano invariati.
+Il taglio intercetta il secondo foro di ogni fila (X = 7 mm) e le tasche a
+meandro; per provare gli incastri completi usare T03.
+
+
+PROVINO T05 - RIQUADRO DELLA TASCA SOTTO P06
+T05_Provino_tasca_P06.stl: solo un quadratino 20 x 20 x 3 mm ritagliato
+dal portaocchiali P06 aggiornato, attorno a una tasca per la chiave P07.
+Tasca aperta sotto, profonda 2,2 mm; piano superiore intero spesso 0,8 mm.
+La tasca conserva le quote e i giochi del pezzo finale.
+Stampare una copia in millimetri e scala 100%, fondo sul piatto come P06:
+la tasca e rivolta verso il piatto e il soffitto richiede ponti corti.
+Usare la chiave P07 esistente, spessa 2 mm. Appoggiarla sul piano e
+abbassarvi sopra T05: una meta entra nella tasca, l'altra sporge dal bordo.
+Provare l'inserimento e la rimozione a mano, senza forzare.
+
+
+TRE VARIANTI DI PROVA DELLA CHIAVE A S P07 - 2 OTTOBRE 2026
+T06_Chiave_S_spessore_1_7mm.stl: 16,1 x 19,1 x 1,7 mm; spessore ridotto di 0,3 mm.
+T07_Chiave_S_spessore_1_4mm.stl: 16,1 x 19,1 x 1,4 mm; spessore ridotto di 0,6 mm.
+T08_Chiave_S_spessore_1_2mm.stl: 16,1 x 19,1 x 1,2 mm; spessore ridotto di 0,8 mm.
+Larghezza e lunghezza aumentate ciascuna di 0,1 mm complessivi.
+Stampare una copia per variante, piatta sul piatto, in millimetri e scala 100%,
+con il profilo della chiave P07 (100% riempimento).
+Usare il provino T05 per confrontare inserimento e gioco nella tasca di P06.
+Il gioco CAD verticale nominale nella tasca da 2,2 mm e rispettivamente
+0,5 / 0,8 / 1,0 mm; il risultato reale dipende dalla stampa.
+
+
+PROVINO T09 - CHIAVE A S 16,25 x 19,25 x 1,6 mm - 2 OTTOBRE 2026
+Spessore impostato a 1,6 mm secondo la prova dell'utente.
+Larghezza e lunghezza aumentate di altri 0,15 mm rispetto alle varianti
+da 16,1 x 19,1 mm: ingombro nuovo 16,25 x 19,25 mm.
+Stampare una copia, piatta sul piatto, in millimetri e scala 100%,
+con il profilo della chiave P07 (100% riempimento). Provare nella tasca T05.
+
+
+PROVINO T10 - CHIAVE A S CON PROFILO PIU ADERENTE - 2 OTTOBRE 2026
+T10_Chiave_S_aderente_1_6mm.stl: 16,45 x 19,45 x 1,6 mm.
+Spessore confermato di 1,6 mm. Contorno della T09 spostato verso
+l'esterno di 0,10 mm per lato: i bracci della S sono piu larghi di 0,20 mm.
+La forma interna viene modificata insieme a quella esterna per ridurre
+il gioco sulle pareti della tasca. Non e un semplice aumento di scala.
+Stampare una copia piatta, in millimetri e scala 100%, con lo stesso
+profilo della T09 e 100% di riempimento. Provare nella tasca T05.
+Verifica CAD: nessuna intersezione nelle sedi P01 e P06; verificare
+inserimento e rimozione reali a mano senza forzare.
+
+
+PROVINO T11 - GRATA ESTESA A QUADRETTI CHIUSI - 2 OTTOBRE 2026
+T11_Tasca_porta_patch_con_base.stl: ingombro 56 x 100 x 52,5 mm.
+Solo la grata e prolungata di 11 mm verso il lato del taglio, fino
+alla barra originale X = 59-61 mm che chiude i quadretti.
+La parte bassa resta larga 45 mm (X = 70-115 mm nel modello originale).
+Soffitto da 2 mm, spazio libero sotto la grata di 5 mm e piedino
+anteriore alto 12 mm conservati. Nessun piedino posteriore.
+Stampare in millimetri e scala 100%, fondo sul piatto, profilo di P01.
+Controllare nello slicer i supporti per fondo sporgente, soffitto e
+la porzione di grata estesa e sospesa.
+
+
+PROVINO T11 - ULTERIORE AUMENTO LATERALE - 2 OTTOBRE 2026
+T11_Chiave_S_aderente_1_6mm.stl: 16,65 x 19,65 x 1,6 mm.
+Spessore confermato di 1,6 mm. Contorno della T10 allargato di altri
+0,10 mm per lato; bracci piu larghi di 0,20 mm rispetto alla T10.
+Nuovo provino di taratura dopo gioco laterale rilevato nella prova fisica.
+Stampare una copia piatta, in millimetri e scala 100%, con lo stesso
+profilo della T10 e 100% di riempimento. Provare nella tasca T05.
+Questa misura supera leggermente la tasca CAD nominale: le intersezioni
+sono riportate in dati/verifica_T11.json. Verificare inserimento e rimozione
+nella tasca stampata a mano senza forzare.
+
+
+TEST BRIDGE T12 - 3 OTTOBRE 2026
+T12_Test_bridge_2_15mm.stl: test numerato 85 x 20 x 12 mm,
+con campate libere di 2, 3, 4, 5, 6, 8, 10, 12, 15 mm.
+Stampare SENZA SUPPORTI, scala 100%, con materiale e profilo della grata.
+Ponti larghi 2 mm e spessi 3 mm, come le barre della grata.
+Vedi LEGGIMI_TEST_BRIDGE.txt per stampa e lettura del risultato.

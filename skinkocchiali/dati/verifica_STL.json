@@ -1,19 +1,19 @@
 [
   {
     "file": "stl/P01_Modulo_principale.stl",
-    "triangles": 29572,
+    "triangles": 30772,
     "closed_edges": true,
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 1.236150000006755e-06,
+    "min_triangle_area_mm2": 1.218770194100216e-06,
     "z_min": 0.0,
     "dimensions_mm": [
       115.0,
       100.0,
-      218.7
+      220.3
     ],
-    "volume_mm3": 176304.8682
+    "volume_mm3": 180844.2178
   },
   {
     "file": "stl/P02_Sezione_mobile_4x60.stl",
@@ -22,14 +22,14 @@
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 0.00013860584999968997,
+    "min_triangle_area_mm2": 0.0001390611141687259,
     "z_min": 0.0,
     "dimensions_mm": [
       4.0,
       57.3,
       180.8
     ],
-    "volume_mm3": 16714.08
+    "volume_mm3": 16714.1429
   },
   {
     "file": "stl/P03_Sezione_mobile_50x80.stl",
@@ -38,14 +38,14 @@
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 0.0001388175500000072,
+    "min_triangle_area_mm2": 0.00013910593406762928,
     "z_min": 0.0,
     "dimensions_mm": [
       50.0,
       77.3,
       180.8
     ],
-    "volume_mm3": 57028.7518
+    "volume_mm3": 57028.7391
   },
   {
     "file": "stl/P04_Porta_patch_pieno.stl",
@@ -54,14 +54,14 @@
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 1.376999999998924e-07,
+    "min_triangle_area_mm2": 1.4016404747962952e-07,
     "z_min": 0.0,
     "dimensions_mm": [
       70.0,
       126.0,
       6.4
     ],
-    "volume_mm3": 26268.7834
+    "volume_mm3": 26268.7783
   },
   {
     "file": "stl/P05_Vassoio_con_asticella.stl",
@@ -70,30 +70,30 @@
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 0.0031630231095096184,
+    "min_triangle_area_mm2": 0.003163376927535738,
     "z_min": 0.0,
     "dimensions_mm": [
       66.4,
       29.5667,
       14.1
     ],
-    "volume_mm3": 971.8735
+    "volume_mm3": 971.8727
   },
   {
     "file": "stl/P06_Porta_occhiali.stl",
-    "triangles": 488,
+    "triangles": 520,
     "closed_edges": true,
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 0.01655153930000143,
+    "min_triangle_area_mm2": 2.1286483388394117e-05,
     "z_min": 0.0,
     "dimensions_mm": [
       142.0,
       46.1,
       23.7
     ],
-    "volume_mm3": 21032.2064
+    "volume_mm3": 21143.3726
   },
   {
     "file": "stl/P07_Chiave_meandro.stl",
@@ -102,29 +102,29 @@
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 4.199999999999999,
+    "min_triangle_area_mm2": 3.0,
     "z_min": 0.0,
     "dimensions_mm": [
       16.0,
       19.0,
       2.0
     ],
-    "volume_mm3": 319.2
+    "volume_mm3": 228.0
   },
   {
     "file": "stl/P08_Fermo_L.stl",
-    "triangles": 544,
+    "triangles": 672,
     "closed_edges": true,
     "consistent_winding": true,
     "connected_solids": 1,
     "degenerate_triangles": 0,
-    "min_triangle_area_mm2": 0.0010617958999999339,
+    "min_triangle_area_mm2": 0.0010616290965117514,
     "z_min": 0.0,
     "dimensions_mm": [
       6.7,
       77.3,
       33.5
     ],
-    "volume_mm3": 6412.7366
+    "volume_mm3": 6437.3215
   }
 ]

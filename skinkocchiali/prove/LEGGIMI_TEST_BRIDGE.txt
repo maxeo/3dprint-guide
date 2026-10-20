@@ -1,0 +1,32 @@
+TEST BRIDGE T12 - CAMPATE DA 2 A 15 MM
+
+FILE: T12_Test_bridge_2_15mm.stl
+Dimensioni: 85 x 20 x 12 mm. Stampare una copia.
+Campate libere numerate: 2, 3, 4, 5, 6, 8, 10, 12, 15 mm.
+La campata e la luce libera fra due appoggi, non la distanza dei loro centri.
+Ponti: sezione 2 x 3 mm, come le barre della grata.
+Base 3 mm; appoggi di sezione 2 x 2 mm; spazio sotto i ponti 6 mm.
+
+COME STAMPARE
+Importare in millimetri, scala 100%, base piatta sul piatto.
+Disattivare i supporti: non deve esserci materiale a sostegno dei ponti.
+Usare lo stesso materiale e lo stesso profilo con cui la grata non riesce
+a fare bridge: altezza strato, temperature, ventola e parametri bridge.
+Nel preview dello slicer controllare che il primo strato sospeso
+a Z = 9 mm attraversi le aperture fra gli appoggi, senza supporti.
+Per verificare l'altra direzione, stampare una seconda copia ruotata
+di 90 gradi sul piatto, mantenendo gli stessi parametri.
+
+COME LEGGERE IL RISULTATO
+Dopo raffreddamento guardare soprattutto il SOTTO dei ponti, non solo
+la faccia superiore: gli strati successivi possono coprire un primo
+strato caduto. Confrontare i numeri stampati davanti alle aperture.
+Per ogni campata segnare: BUONA / DA VALUTARE / FALLITA.
+BUONA: fili continui, agganciati a entrambi i lati, fondo abbastanza
+regolare per il tuo utilizzo. DA VALUTARE: fili continui ma visibilmente
+incurvati o disordinati. FALLITA: fili staccati, interrotti o caduti.
+La campata utile per la grata e la maggiore che accetti come BUONA;
+per il progetto scegli una campata inferiore al limite misurato.
+Se i risultati non sono progressivi, ripetere il test prima di decidere.
+Riporta materiale, altezza strato, orientamento e il numero maggiore
+riuscito bene, oppure una foto del lato inferiore con i numeri visibili.

@@ -6,11 +6,11 @@ Vista dal davanti: Nord a destra, Sud a sinistra.
 Assieme: X verso destra; Y verso il fondo; Z verso l'alto.
 STL singoli: in millimetri, scala 100%, Z minimo = 0.
 P04 e P05 sono ruotati per la stampa; usare il file Blender per l'assieme.
-Ingombro assieme: 150 x 126,1 x 218,7 mm, entro il mobile 310 x 130 x 219 mm.
+Ingombro assieme: 150 x 126,1 x 220,3 mm. La quota del mobile 310 x 130 x 219 mm e un riferimento precedente.
 La profondita include il portaocchiali; la larghezza include la sua sporgenza a Sud.
 
 DA STAMPARE - UNA COPIA CIASCUNO, TRANNE P07
-stl/P01_Modulo_principale.stl - 115.0 x 100.0 x 218.7 mm
+stl/P01_Modulo_principale.stl - 115.0 x 100.0 x 220.3 mm
 stl/P02_Sezione_mobile_4x60.stl - 4.0 x 57.3 x 180.8 mm
 stl/P03_Sezione_mobile_50x80.stl - 50.0 x 77.3 x 180.8 mm
 stl/P04_Porta_patch_pieno.stl - 70.0 x 126.0 x 6.4 mm
@@ -28,7 +28,7 @@ Il profilo Sakura non si trasferisce automaticamente a questi componenti.
 IMPOSTAZIONI INIZIALI DA CONTROLLARE NELLO SLICER
 Ugello 0,4 mm; strato 0,20 mm (0,16-0,20 per P04/P05); 3 pareti.
 Riempimento 15-20% come punto di partenza; le sezioni sottili saranno piene.
-P01 verticale, alto 218,7 mm: verificare altezza utile e supporti per soffitti/grata.
+P01 verticale, alto 220,3 mm: verificare altezza utile e supporti per soffitti/grata.
 P02/P03/P08: i pioli poggiano sul piatto e la base resta sollevata di 3,5 mm.
 Servono supporti sotto la base; valutare orientamenti alternativi nello slicer.
 P04: schiena sul piatto; verificare ponti/supporti sotto il frontale e rimuoverli
@@ -96,3 +96,10 @@ AGGIORNAMENTO 27 SETTEMBRE 2026
 P06: fessure a S non piu passanti; tasche aperte solo sotto, profonde 2,2 mm, piano intero sopra.
 P07: spessore ridotto da 2,8 a 2,0 mm per stare nella tasca di P06.
 P08: terzo perno a Y = 42,5 mm, nella fila centrale dei fori di P01.
+
+
+AGGIORNAMENTO 1 OTTOBRE 2026
+Altezza totale aumentata da 218,7 a 220,3 mm (+1,6 mm).
+Allungati solo i quattro fermi superiori di P01 e i due fermi corrispondenti
+nel provino T04_Fetta_Sud_completa.stl, ora alto 220,3 mm.
+Quota della grata, base, incastri e altri pezzi invariati. T01, T02 e T03 invariati.
