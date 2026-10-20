@@ -118,3 +118,13 @@ con campate libere di 2, 3, 4, 5, 6, 8, 10, 12, 15 mm.
 Stampare SENZA SUPPORTI, scala 100%, con materiale e profilo della grata.
 Ponti larghi 2 mm e spessi 3 mm, come le barre della grata.
 Vedi LEGGIMI_TEST_BRIDGE.txt per stampa e lettura del risultato.
+
+
+AGGIORNAMENTO 20 OTTOBRE 2026 - PROVINI ALLINEATI AL NUOVO P01
+T11_Tasca_porta_patch_con_base.stl: aggiunte le barre della grata a
+X = 10-12, 30-32 e 46,5-48,5 mm (P01: X = 70, 90 e 106,5 mm), colonne ora
+da 4,5-8 mm; fondo della tasca del porta patch abbassato da Z = 5 a
+Z = 3,2 mm (Z = 4,2 mm per X 46,6-49,4, sopra il bordino di P06).
+Ingombro invariato 56 x 100 x 52,5 mm, mesh chiusa, volume 47 593 mm3.
+T03 (X 0-16 mm) e T04 (X 0-8 mm) non comprendono le parti modificate
+(barre nuove da X = 29 mm, tasca da X = 31,6 mm): restano validi cosi.
