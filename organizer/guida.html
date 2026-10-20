@@ -1164,4 +1164,8 @@ function monta(){
 window.StampanteGuide={get,set,fits,check,onChange:cb=>cbs.push(cb)};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',monta);else monta();
 })();</script><!--STAMPANTE-FINE-->
+<!-- torna-indice: aggiunto da aggiorna_guide.sh nelle copie pubblicate -->
+<style id="torna-indice-css">.torna-indice{position:fixed;top:12px;left:12px;z-index:50;display:inline-flex;align-items:center;gap:7px;font:600 13px/1 system-ui,sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 12px;box-shadow:0 2px 10px rgba(0,0,0,.12);text-decoration:none}.torna-indice:hover{border-color:var(--accent)}.torna-indice svg{width:15px;height:15px;flex:none}.guida-top .torna-indice{position:static;order:-1}@media (max-width:640px){.guida-top .torna-indice{margin-right:auto}.torna-indice span{display:none}}@media print{.torna-indice{display:none}}</style>
+<a class="torna-indice" href="../" title="Torna all'elenco delle guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg><span>Tutte le guide</span></a>
+<script>(function(){var a=document.querySelector('.torna-indice'),n=0;(function metti(){var t=document.querySelector('.guida-top');if(t){t.appendChild(a)}else if(n++<40){setTimeout(metti,50)}})()})()</script>
 </body></html>
