@@ -128,3 +128,9 @@ Z = 3,2 mm (Z = 4,2 mm per X 46,6-49,4, sopra il bordino di P06).
 Ingombro invariato 56 x 100 x 52,5 mm, mesh chiusa, volume 47 593 mm3.
 T03 (X 0-16 mm) e T04 (X 0-8 mm) non comprendono le parti modificate
 (barre nuove da X = 29 mm, tasca da X = 31,6 mm): restano validi cosi.
+
+
+AGGIORNAMENTO 20 OTTOBRE 2026 (2) - PARETE NORD DA 2 MM
+T11_Tasca_porta_patch_con_base.stl: parete esterna Nord portata da 0,8
+a 2 mm come in P01; fessura interna invariata, fermo spostato di 1,2 mm.
+Ingombro nuovo 57,2 x 100 x 52,5 mm. T03 e T04 invariati (lato Sud).
