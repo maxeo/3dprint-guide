@@ -1,0 +1,349 @@
+{
+ "V3": {
+  "tipo": "unione",
+  "label": "Vasca unica",
+  "sostituisce": [
+   "V1",
+   "V2"
+  ],
+  "parti": [
+   {
+    "id": "V3",
+    "name": "V3_Vasca_unica",
+    "file": "stl/varianti/V3_Vasca_unica.stl",
+    "volume": 241607.1,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      -43.35,
+      165.98
+     ],
+     [
+      -75.0,
+      69.0
+     ],
+     [
+      13.8,
+      38.0
+     ]
+    ],
+    "dimensions_mm": [
+     209.33,
+     144.0,
+     24.2
+    ]
+   }
+  ],
+  "volume_kit": 241208.0,
+  "volume_variante": 241607.1
+ },
+ "S3": {
+  "tipo": "unione",
+  "label": "Grata unica",
+  "sostituisce": [
+   "S1",
+   "S2"
+  ],
+  "parti": [
+   {
+    "id": "S3",
+    "name": "S3_Grata_unica",
+    "file": "stl/varianti/S3_Grata_unica.stl",
+    "volume": 48652.9,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      -41.0,
+      146.0
+     ],
+     [
+      -60.0,
+      60.0
+     ],
+     [
+      36.0,
+      40.0
+     ]
+    ],
+    "dimensions_mm": [
+     187.0,
+     120.0,
+     4.0
+    ]
+   }
+  ],
+  "volume_kit": 47604.9,
+  "volume_variante": 48652.9
+ },
+ "R23": {
+  "tipo": "divisione",
+  "label": "Ripiano diviso in due",
+  "sostituisce": [
+   "R1"
+  ],
+  "parti": [
+   {
+    "id": "R2",
+    "name": "R2_Ripiano_posteriore",
+    "file": "stl/varianti/R2_Ripiano_posteriore.stl",
+    "volume": 46742.3,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      -46.2,
+      83.0
+     ],
+     [
+      -63.2,
+      63.2
+     ],
+     [
+      126.8,
+      142.0
+     ]
+    ],
+    "dimensions_mm": [
+     129.2,
+     126.4,
+     15.2
+    ]
+   },
+   {
+    "id": "R3",
+    "name": "R3_Ripiano_anteriore",
+    "file": "stl/varianti/R3_Ripiano_anteriore.stl",
+    "volume": 34088.0,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      83.0,
+      183.8
+     ],
+     [
+      -63.2,
+      63.2
+     ],
+     [
+      126.8,
+      142.0
+     ]
+    ],
+    "dimensions_mm": [
+     100.8,
+     126.4,
+     15.2
+    ]
+   }
+  ],
+  "volume_kit": 78808.6,
+  "volume_variante": 80830.3,
+  "taglio": "X 83.0",
+  "perni": [
+   [
+    83.0,
+    59.3,
+    136.0
+   ],
+   [
+    83.0,
+    -59.3,
+    136.0
+   ]
+  ],
+  "asse": "X",
+  "note": "sponde ingrossate verso l'interno a 7.8 mm per 20.8 mm attorno al taglio; sponda interna era a Y ±60.00",
+  "perni_da_stampare": 2
+ },
+ "G34": {
+  "tipo": "divisione",
+  "label": "Parete e coda divise in due",
+  "sostituisce": [
+   "G1"
+  ],
+  "parti": [
+   {
+    "id": "G3",
+    "name": "G3_Parete_bassa",
+    "file": "stl/varianti/G3_Parete_bassa.stl",
+    "volume": 190486.5,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      -96.849,
+      11.952
+     ],
+     [
+      -66.537,
+      66.537
+     ],
+     [
+      0.0,
+      90.0
+     ]
+    ],
+    "dimensions_mm": [
+     108.801,
+     133.073,
+     90.0
+    ]
+   },
+   {
+    "id": "G4",
+    "name": "G4_Parete_alta_e_coda",
+    "file": "stl/varianti/G4_Parete_alta_e_coda.stl",
+    "volume": 97087.5,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      -97.384,
+      -29.5
+     ],
+     [
+      -62.5,
+      62.5
+     ],
+     [
+      90.0,
+      193.489
+     ]
+    ],
+    "dimensions_mm": [
+     67.884,
+     125.0,
+     103.489
+    ]
+   }
+  ],
+  "volume_kit": 287852.8,
+  "volume_variante": 287574.0,
+  "taglio": "Z 90.0",
+  "perni": [
+   [
+    -48.2,
+    35,
+    90.0
+   ],
+   [
+    -48.0,
+    -35,
+    90.0
+   ]
+  ],
+  "asse": "Z",
+  "perni_da_stampare": 2
+ },
+ "G56": {
+  "tipo": "divisione",
+  "label": "Testa e petto divisi in due",
+  "sostituisce": [
+   "G2"
+  ],
+  "parti": [
+   {
+    "id": "G5",
+    "name": "G5_Petto_e_zampe",
+    "file": "stl/varianti/G5_Petto_e_zampe.stl",
+    "volume": 312411.3,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      156.13,
+      241.359
+     ],
+     [
+      -47.191,
+      47.152
+     ],
+     [
+      0.0,
+      95.0
+     ]
+    ],
+    "dimensions_mm": [
+     85.229,
+     94.343,
+     95.0
+    ]
+   },
+   {
+    "id": "G6",
+    "name": "G6_Testa",
+    "file": "stl/varianti/G6_Testa.stl",
+    "volume": 662095.4,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      138.304,
+      262.699
+     ],
+     [
+      -55.875,
+      55.811
+     ],
+     [
+      95.0,
+      218.264
+     ]
+    ],
+    "dimensions_mm": [
+     124.395,
+     111.685,
+     123.264
+    ]
+   }
+  ],
+  "volume_kit": 974785.5,
+  "volume_variante": 974506.7,
+  "taglio": "Z 95.0",
+  "perni": [
+   [
+    204.85,
+    19.99,
+    95.0
+   ],
+   [
+    204.85,
+    -20.01,
+    95.0
+   ]
+  ],
+  "asse": "Z",
+  "perni_da_stampare": 2
+ },
+ "perno": {
+  "file": "stl/varianti/PERNO_D3.42_L15.stl",
+  "diametro": 3.42,
+  "lunghezza": 15.0,
+  "sede": "cieca Ø3.40 profonda 7.7 per lato",
+  "volume": 135.8,
+  "componenti": 1,
+  "nonmanifold": 0,
+  "bounds": [
+   [
+    -1.71,
+    1.71
+   ],
+   [
+    -1.71,
+    1.71
+   ],
+   [
+    0.0,
+    15.0
+   ]
+  ],
+  "dimensions_mm": [
+   3.42,
+   3.42,
+   15.0
+  ]
+ }
+}
