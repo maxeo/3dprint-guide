@@ -11,7 +11,7 @@
     "id": "V3",
     "name": "V3_Vasca_unica",
     "file": "stl/varianti/V3_Vasca_unica.stl",
-    "volume": 241607.1,
+    "volume": 321590.2,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -36,7 +36,7 @@
    }
   ],
   "volume_kit": 241208.0,
-  "volume_variante": 241607.1
+  "volume_variante": 321590.2
  },
  "S3": {
   "tipo": "unione",
