@@ -11,7 +11,7 @@
     "id": "V3",
     "name": "V3_Vasca_unica",
     "file": "stl/varianti/V3_Vasca_unica.stl",
-    "volume": 343126.1,
+    "volume": 179981.5,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -24,25 +24,26 @@
       69.0
      ],
      [
-      13.8,
+      12.238,
       38.0
      ]
     ],
     "dimensions_mm": [
      209.33,
      144.0,
-     24.2
-    ]
+     25.762
+    ],
+    "stl_orientato": "ruotato di 4.27° con il sotto sul piatto"
    }
   ],
   "volume_kit": 241208.0,
-  "volume_variante": 343126.1,
+  "volume_variante": 179981.5,
   "adatta": {
    "G1": {
     "id": "G7",
     "name": "G7_Parete_e_coda_vasca_unica",
     "file": "stl/varianti/G7_Parete_e_coda_vasca_unica.stl",
-    "volume": 293492.9,
+    "volume": 306402.1,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -70,7 +71,7 @@
     "id": "G8",
     "name": "G8_Parete_bassa_vasca_unica",
     "file": "stl/varianti/G8_Parete_bassa_vasca_unica.stl",
-    "volume": 196126.6,
+    "volume": 209035.8,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
