@@ -71,7 +71,7 @@
     "id": "G8",
     "name": "G8_Parete_bassa_vasca_unica",
     "file": "stl/varianti/G8_Parete_bassa_vasca_unica.stl",
-    "volume": 209035.8,
+    "volume": 210521.8,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -85,17 +85,115 @@
      ],
      [
       0.0,
-      90.0
+      93.5
      ]
     ],
     "dimensions_mm": [
      108.801,
      133.073,
-     90.0
+     93.5
     ],
     "compenetrazione_V3_mm3": 0.0
    }
   }
+ },
+ "V12": {
+  "tipo": "rifatta",
+  "label": "Vasca in due pezzi",
+  "sostituisce": [
+   "V1",
+   "V2"
+  ],
+  "parti": [
+   {
+    "id": "V1",
+    "name": "V1_Vasca_posteriore_chiusa",
+    "file": "stl/varianti/V1_Vasca_posteriore_chiusa.stl",
+    "volume": 116540.1,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      -43.35,
+      90.95
+     ],
+     [
+      -75.0,
+      69.0
+     ],
+     [
+      12.238,
+      38.0
+     ]
+    ],
+    "dimensions_mm": [
+     134.3,
+     144.0,
+     25.762
+    ],
+    "stl_orientato": "ruotato di 4.27° con il sotto sul piatto"
+   },
+   {
+    "id": "V2",
+    "name": "V2_Vasca_anteriore_chiusa",
+    "file": "stl/varianti/V2_Vasca_anteriore_chiusa.stl",
+    "volume": 63285.4,
+    "componenti": 1,
+    "nonmanifold": 0,
+    "bounds": [
+     [
+      79.05,
+      165.98
+     ],
+     [
+      -69.0,
+      69.0
+     ],
+     [
+      15.55,
+      38.0
+     ]
+    ],
+    "dimensions_mm": [
+     86.93,
+     138.0,
+     22.45
+    ],
+    "stl_orientato": "ruotato di 4.27° con il sotto sul piatto"
+   }
+  ],
+  "volume_kit": 241208.0,
+  "volume_variante": 179825.5,
+  "taglio": "X 85",
+  "incastro": "Double Jigsaw",
+  "scorrimento": "Y",
+  "dir": [
+   0,
+   1,
+   0
+  ],
+  "lobi": [
+   {
+    "sponda": "-Y",
+    "quota": 29.0,
+    "y": [
+     -68.8,
+     -50.6
+    ],
+    "lunghezza": 18.1,
+    "di": "V1"
+   },
+   {
+    "sponda": "+Y",
+    "quota": 31.6,
+    "y": [
+     68.8,
+     50.4
+    ],
+    "lunghezza": 18.4,
+    "di": "V2"
+   }
+  ]
  },
  "S3": {
   "tipo": "unione",
@@ -147,39 +245,39 @@
     "id": "R2",
     "name": "R2_Ripiano_posteriore",
     "file": "stl/varianti/R2_Ripiano_posteriore.stl",
-    "volume": 46742.3,
+    "volume": 51233.1,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
      [
       -46.2,
-      83.0
+      88.95
      ],
      [
       -63.2,
       63.2
      ],
      [
-      126.8,
+      122.6,
       142.0
      ]
     ],
     "dimensions_mm": [
-     129.2,
+     135.15,
      126.4,
-     15.2
+     19.4
     ]
    },
    {
     "id": "R3",
     "name": "R3_Ripiano_anteriore",
     "file": "stl/varianti/R3_Ripiano_anteriore.stl",
-    "volume": 34088.0,
+    "volume": 36137.8,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
      [
-      83.0,
+      77.05,
       183.8
      ],
      [
@@ -187,35 +285,64 @@
       63.2
      ],
      [
-      126.8,
+      122.6,
       142.0
      ]
     ],
     "dimensions_mm": [
-     100.8,
+     106.75,
      126.4,
-     15.2
+     19.4
     ]
    }
   ],
   "volume_kit": 78808.6,
-  "volume_variante": 80830.3,
-  "taglio": "X 83.0",
-  "perni": [
-   [
-    83.0,
-    59.3,
-    136.0
-   ],
-   [
-    83.0,
-    -59.3,
-    136.0
-   ]
+  "volume_variante": 87370.9,
+  "taglio": "X 83",
+  "incastro": "Double Jigsaw",
+  "scorrimento": "Y",
+  "dir": [
+   0,
+   1,
+   0
   ],
-  "asse": "X",
-  "note": "sponde ingrossate verso l'interno a 7.8 mm per 20.8 mm attorno al taglio; sponda interna era a Y ±60.00",
-  "perni_da_stampare": 2
+  "lobi": [
+   {
+    "sponda": "-Y",
+    "quota": 134.4,
+    "y": [
+     -63.0,
+     -56.6
+    ],
+    "lunghezza": 6.4,
+    "di": "R2"
+   },
+   {
+    "sponda": "+Y",
+    "quota": 134.4,
+    "y": [
+     63.0,
+     56.6
+    ],
+    "lunghezza": 6.4,
+    "di": "R3"
+   }
+  ],
+  "note": "sponde ingrossate verso l'interno a 9 mm per 18.6 mm attorno al taglio; costola sotto il taglio larga 16 mm, fondo spesso 7 mm; linguetta 3 × 3 mm lungo Y; si stampano in piedi sulla sponda",
+  "costola": {
+   "larghezza": 16.0,
+   "spessore_fondo": 7.0,
+   "z": [
+    122.6,
+    129.6
+   ]
+  },
+  "linguetta": {
+   "spessore": 3.0,
+   "sporgenza": 3.0,
+   "quota": 126.1,
+   "gioco": 0.15
+  }
  },
  "G34": {
   "tipo": "divisione",
@@ -228,7 +355,7 @@
     "id": "G3",
     "name": "G3_Parete_bassa",
     "file": "stl/varianti/G3_Parete_bassa.stl",
-    "volume": 190486.5,
+    "volume": 191972.5,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -242,20 +369,20 @@
      ],
      [
       0.0,
-      90.0
+      93.5
      ]
     ],
     "dimensions_mm": [
      108.801,
      133.073,
-     90.0
+     93.5
     ]
    },
    {
     "id": "G4",
     "name": "G4_Parete_alta_e_coda",
     "file": "stl/varianti/G4_Parete_alta_e_coda.stl",
-    "volume": 97087.5,
+    "volume": 94453.6,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -280,22 +407,44 @@
    }
   ],
   "volume_kit": 287852.8,
-  "volume_variante": 287574.0,
+  "volume_variante": 286426.1,
   "taglio": "Z 90.0",
-  "perni": [
-   [
-    -48.2,
-    35,
-    90.0
-   ],
-   [
-    -48.0,
-    -35,
-    90.0
-   ]
+  "incastro": "coda di rondine",
+  "binari": [
+   {
+    "asse": "X",
+    "laterale": 0.0,
+    "da": -77.6,
+    "a": -42.2,
+    "collo": 5.0,
+    "altezza": 3.5,
+    "larghezza_in_cima": 9.04
+   },
+   {
+    "asse": "X",
+    "laterale": 35.0,
+    "da": -51.6,
+    "a": -42.2,
+    "collo": 5.0,
+    "altezza": 3.5,
+    "larghezza_in_cima": 9.04
+   },
+   {
+    "asse": "X",
+    "laterale": -35.0,
+    "da": -51.6,
+    "a": -42.0,
+    "collo": 5.0,
+    "altezza": 3.5,
+    "larghezza_in_cima": 9.04
+   }
   ],
-  "asse": "Z",
-  "perni_da_stampare": 2
+  "scorrimento": "X",
+  "dir": [
+   -1,
+   0,
+   0
+  ]
  },
  "G56": {
   "tipo": "divisione",
@@ -308,7 +457,7 @@
     "id": "G5",
     "name": "G5_Petto_e_zampe",
     "file": "stl/varianti/G5_Petto_e_zampe.stl",
-    "volume": 312411.3,
+    "volume": 316620.3,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -322,20 +471,20 @@
      ],
      [
       0.0,
-      95.0
+      100.0
      ]
     ],
     "dimensions_mm": [
      85.229,
      94.343,
-     95.0
+     100.0
     ]
    },
    {
     "id": "G6",
     "name": "G6_Testa",
     "file": "stl/varianti/G6_Testa.stl",
-    "volume": 662095.4,
+    "volume": 653831.2,
     "componenti": 1,
     "nonmanifold": 0,
     "bounds": [
@@ -360,49 +509,34 @@
    }
   ],
   "volume_kit": 974785.5,
-  "volume_variante": 974506.7,
+  "volume_variante": 970451.5,
   "taglio": "Z 95.0",
-  "perni": [
-   [
-    204.85,
-    19.99,
-    95.0
-   ],
-   [
-    204.85,
-    -20.01,
-    95.0
-   ]
+  "incastro": "coda di rondine",
+  "binari": [
+   {
+    "asse": "X",
+    "laterale": 13.0,
+    "da": 174.8,
+    "a": 219.6,
+    "collo": 6.0,
+    "altezza": 5.0,
+    "larghezza_in_cima": 11.77
+   },
+   {
+    "asse": "X",
+    "laterale": -13.0,
+    "da": 174.8,
+    "a": 219.6,
+    "collo": 6.0,
+    "altezza": 5.0,
+    "larghezza_in_cima": 11.77
+   }
   ],
-  "asse": "Z",
-  "perni_da_stampare": 2
- },
- "perno": {
-  "file": "stl/varianti/PERNO_D3.42_L15.stl",
-  "diametro": 3.42,
-  "lunghezza": 15.0,
-  "sede": "cieca Ø3.40 profonda 7.7 per lato",
-  "volume": 135.8,
-  "componenti": 1,
-  "nonmanifold": 0,
-  "bounds": [
-   [
-    -1.71,
-    1.71
-   ],
-   [
-    -1.71,
-    1.71
-   ],
-   [
-    0.0,
-    15.0
-   ]
-  ],
-  "dimensions_mm": [
-   3.42,
-   3.42,
-   15.0
+  "scorrimento": "X",
+  "dir": [
+   1,
+   0,
+   0
   ]
  }
 }

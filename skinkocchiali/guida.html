@@ -473,6 +473,19 @@ function draw(){if(!ctx)return;$('zoomRange').value=zoomToR(zoom);$('zoomValue')
   if(p.kind==='mesh')for(const [a,b] of featureEdges(p)){ctx.moveTo(V[a][0],V[a][1]);ctx.lineTo(V[b][0],V[b][1])}
   else for(const z of [p.z0+o[2],p.z0+p.h+o[2]])for(const l of p.loops)l.forEach((q,i)=>{const r=project(q[0]+o[0],q[1]+o[1],z);i?ctx.lineTo(r[0],r[1]):ctx.moveTo(r[0],r[1])});
   ctx.stroke()}
+ // esploso e pezzi in movimento: un tratteggio collega ogni pezzo a quelli su cui si monta (al massimo due, montati prima nei
+ // passaggi), dal centro della zona in cui i box si toccano; vince il contatto più sottile, cioè di faccia, non i pezzi annidati
+ {const P=vis.concat(wire),off=P.map(offsetP),g=.6,rank=id=>{const S=DATA.steps||[];let i=S.findIndex(s=>(s.moving||[]).includes(id));
+   if(i<0)i=S.findIndex(s=>(s.parts||[]).includes(id));return i<0?1e9:i},R=P.map(p=>rank(p.main||p.id));
+  ctx.save();ctx.strokeStyle='rgba(222,234,226,.75)';ctx.lineWidth=1.2;ctx.setLineDash([3,4]);ctx.beginPath();
+  for(let i=0;i<P.length;i++){const cand=[];
+   for(let j=0;j<P.length;j++){if(j===i||R[j]>R[i]||(R[j]===R[i]&&j>i))continue;const a=P[i].box,b=P[j].box;
+    const lo=[0,1,2].map(k=>Math.max(a[k],b[k])),hi=[0,1,2].map(k=>Math.min(a[k+3],b[k+3]));if(lo.some((v,k)=>v>hi[k]+g))continue;
+    const ext=lo.map((v,k)=>Math.max(0,hi[k]-v));cand.push({j,c:lo.map((v,k)=>(v+hi[k])/2),s:Math.min(...ext),v:ext[0]*ext[1]*ext[2]})}
+   cand.sort((x,y)=>x.s-y.s||x.v-y.v);
+   for(const {j,c} of cand.slice(0,2)){const oa=off[i],ob=off[j];if(Math.hypot(oa[0]-ob[0],oa[1]-ob[1],oa[2]-ob[2])<1)continue;
+    const q=project(c[0]+oa[0],c[1]+oa[1],c[2]+oa[2]),r=project(c[0]+ob[0],c[1]+ob[1],c[2]+ob[2]);ctx.moveTo(q[0],q[1]);ctx.lineTo(r[0],r[1])}}
+  ctx.stroke();ctx.restore()}
  if(showLabels){ctx.textAlign='center';ctx.textBaseline='middle';ctx.font='bold 12px system-ui';for(const p of vis.concat(wire)){if(p.main)continue;const o=offsetP(p),q=project((p.box[0]+p.box[3])/2+o[0],(p.box[1]+p.box[4])/2+o[1],p.box[5]+o[2]),w=ctx.measureText(p.id).width+14;ctx.fillStyle=inS(SEL,p)?'#f7c56e':'#f2eef0';ctx.fillRect(q[0]-w/2,q[1]-11,w,22);ctx.fillStyle='#2c2629';ctx.fillText(p.id,q[0],q[1])}}}
 let ZB=null;const zLayer=document.createElement('canvas'),zCtx=zLayer.getContext('2d');
 function rasterMeshes(vis,hl,L){const W=canvas.width,H=canvas.height;if(!W||!H)return null;if(zLayer.width!==W||zLayer.height!==H){zLayer.width=W;zLayer.height=H}
