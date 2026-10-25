@@ -1,0 +1,213 @@
+{
+ "montaggio": {
+  "P01_Base": {
+   "min": [
+    -94.99,
+    -95.0,
+    0.0
+   ],
+   "max": [
+    94.99,
+    95.0,
+    42.0
+   ],
+   "size": [
+    189.99,
+    189.99,
+    42.0
+   ],
+   "volume_mm3": 233854,
+   "non_manifold_edges": 0
+  },
+  "P02_Sostegno": {
+   "min": [
+    -37.5,
+    -34.3,
+    3.0
+   ],
+   "max": [
+    107.73,
+    34.3,
+    251.78
+   ],
+   "size": [
+    145.23,
+    68.59,
+    248.78
+   ],
+   "volume_mm3": 585371,
+   "non_manifold_edges": 0
+  },
+  "P03_Portapenne": {
+   "min": [
+    -87.5,
+    -24.0,
+    2.3
+   ],
+   "max": [
+    -39.51,
+    24.0,
+    98.0
+   ],
+   "size": [
+    47.99,
+    48.0,
+    95.7
+   ],
+   "volume_mm3": 25991,
+   "non_manifold_edges": 0
+  }
+ },
+ "giochi_mm": {
+  "portapenne-sostegno": 2.0,
+  "culla-sostegno": 2.11,
+  "custodia-sostegno": 5.51,
+  "custodia-culla_raggio": 0.55
+ },
+ "viti": {
+  "posizioni": [
+   [
+    -24.0,
+    -20.0
+   ],
+   [
+    -24.0,
+    20.0
+   ]
+  ],
+  "foro_base": 4.5,
+  "svasatura": 8.6,
+  "foro_guida": 3.3,
+  "profondita_guida": 16.0,
+  "materiale_attorno_al_foro_guida": {
+   "davanti": 5.29,
+   "dietro": 33.35,
+   "fianco": 12.5
+  },
+  "materiale_fra_svasatura_e_sede": 3.1,
+  "gioco_sede_per_lato": 0.15,
+  "sede_piu_profonda": 0.3
+ },
+ "filetto": {
+  "diametro_vite": 41.0,
+  "passo": 2.5,
+  "profondita": 1.25,
+  "lunghezza_vite": 5.7,
+  "gioco_radiale": 0.4,
+  "madrevite_profonda": 6.0
+ },
+ "holder": {
+  "traslazione_x": 17.798,
+  "spalla_y": -119.392
+ },
+ "stampa": {
+  "P01_Base.stl": {
+   "min": [
+    -94.99,
+    -95.0,
+    0.0
+   ],
+   "max": [
+    94.99,
+    95.0,
+    42.0
+   ],
+   "size": [
+    189.99,
+    189.99,
+    42.0
+   ],
+   "volume_mm3": 233854,
+   "non_manifold_edges": 0,
+   "matrice_montaggio": [
+    [
+     1.0,
+     -0.0,
+     0.0
+    ],
+    [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    [
+     0.0,
+     -0.0,
+     1.0
+    ]
+   ]
+  },
+  "P02_Sostegno.stl": {
+   "min": [
+    -55.29,
+    -124.39,
+    0.0
+   ],
+   "max": [
+    89.94,
+    124.39,
+    68.59
+   ],
+   "size": [
+    145.23,
+    248.78,
+    68.59
+   ],
+   "volume_mm3": 585371,
+   "non_manifold_edges": 0,
+   "matrice_montaggio": [
+    [
+     1.0,
+     -0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "P03_Portapenne.stl": {
+   "min": [
+    -24.0,
+    -24.0,
+    0.0
+   ],
+   "max": [
+    23.99,
+    24.0,
+    95.7
+   ],
+   "size": [
+    47.99,
+    48.0,
+    95.7
+   ],
+   "volume_mm3": 25991,
+   "non_manifold_edges": 0,
+   "matrice_montaggio": [
+    [
+     1.0,
+     -0.0,
+     0.0
+    ],
+    [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    [
+     0.0,
+     -0.0,
+     1.0
+    ]
+   ]
+  }
+ }
+}
