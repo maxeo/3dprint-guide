@@ -328,7 +328,7 @@ Rimane una sola fessura frontale funzionale, larga 4,6 mm e aperta in alto.
 - Corpo: 70 × 6,4 × 126 mm, piede compreso.
 - Tasca interna: 67 mm di larghezza e 3,2 mm di profondità.
 - Vassoio: 66,4 × 2,6 × 2 mm, smussi da 0,25 mm.
-- Asticella frontale accorciata a **1/3**: 29,57 mm contro i precedenti 88,7 mm; sezione 4 × 2,4 mm, presa larga 10 mm.
+- Asticella frontale accorciata a **1/3** (29,57 mm contro i precedenti 88,7 mm), poi allungata di 10 mm: **39,57 mm**; sezione 4 × 2,4 mm, presa larga 10 mm.
 - Presa sporgente di 9,6 mm rispetto alla parete frontale.
 - Corsa manuale d'uso: 25 mm. Il vassoio non resta bloccato in alto.
 - Il vassoio e l'asticella formano un unico pezzo separato, inseribile dall'alto.

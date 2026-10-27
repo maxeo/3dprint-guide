@@ -14,7 +14,7 @@ stl/P01_Modulo_principale.stl - 115.0 x 100.0 x 220.3 mm
 stl/P02_Sezione_mobile_4x60.stl - 4.0 x 57.3 x 180.8 mm
 stl/P03_Sezione_mobile_50x80.stl - 50.0 x 77.3 x 180.8 mm
 stl/P04_Porta_patch_pieno.stl - 70.0 x 126.0 x 6.4 mm
-stl/P05_Vassoio_con_asticella.stl - 66.4 x 29.567 x 14.1 mm
+stl/P05_Vassoio_con_asticella.stl - 66.4 x 39.567 x 14.1 mm
 stl/P06_Porta_occhiali.stl - 142.0 x 46.1 x 23.7 mm
 stl/P07_Chiave_meandro.stl - 16.0 x 19.0 x 2.0 mm - DUE COPIE
 stl/P08_Fermo_L.stl - 6.7 x 77.3 x 33.5 mm
@@ -59,7 +59,7 @@ MONTAGGIO
 MODIFICHE
 Pareti del porta patch piene, con sola fessura funzionale da 4,6 mm.
 Tasca interna 67 x 3,2 mm. Vassoio 66,4 x 2,6 x 2 mm, smusso 0,25 mm.
-Asticella accorciata a 1/3: 29,57 mm (prima 88,7 mm), sezione 4 x 2,4 mm; presa larga 10 mm, sporgente 9,6 mm dalla parete.
+Asticella da 39,57 mm (accorciata a 1/3, 29,57 mm, poi allungata di 10 mm; in origine 88,7 mm), sezione 4 x 2,4 mm; presa larga 10 mm, sporgente 9,6 mm dalla parete.
 Piede del porta patch derivato dall'originale.
 Tasca su P01 allargata al piede con gioco di 0,3 mm per lato.
 Scarico locale del bordo posteriore della tasca per non interferire con P03.
