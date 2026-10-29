@@ -13,6 +13,7 @@ PROGETTI=(
   "skinkocchiali:Modulo SkinkOcchiali"
   "organizer:Organizer Modulare"
   "stand-ps5:Stand Controller PS5"
+  "palline:Palline Traforate"
 )
 
 for voce in "${PROGETTI[@]}"; do
