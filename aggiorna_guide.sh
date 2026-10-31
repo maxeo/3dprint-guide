@@ -14,6 +14,7 @@ PROGETTI=(
   "organizer:Organizer Modulare"
   "stand-ps5:Stand Controller PS5"
   "palline:Palline Traforate"
+  "supporto-telefono:Supporto Telefono"
 )
 
 for voce in "${PROGETTI[@]}"; do
