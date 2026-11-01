@@ -9,6 +9,15 @@
    30.0,
    17.5
   ],
+  "denti": {
+   "numero": 36,
+   "scatto_gradi": 10.0,
+   "altezza": 0.65,
+   "raggi": [
+    5.9,
+    9.5
+   ]
+  },
   "nocca": 30.0,
   "gioco_nocca_per_lato": 0.2,
   "orecchia": 9.0,
@@ -36,6 +45,11 @@
   ],
   "asse_piatto_dal_dorso": 14.0,
   "telefono_max": 14.0,
+  "telefono": [
+   160.0,
+   75.0,
+   9.0
+  ],
   "guida_appoggio": {
    "fessura": 8.8,
    "cava": 13.2,
@@ -45,7 +59,7 @@
   "pomello_altezza": 13.0,
   "pomello_morsa_altezza": 11.0,
   "posa_uso": {
-   "alfa": 95.0,
+   "alfa": 100.0,
    "sfilo": 20.0,
    "piatto_dalla_verticale": 20.0
   },
@@ -119,8 +133,8 @@
     35.0,
     20.0
    ],
-   "volume_mm3": 27950,
-   "peso_PETG_g": 35.5,
+   "volume_mm3": 27391,
+   "peso_PETG_g": 34.8,
    "non_manifold_edges": 0
   },
   "P03_Slitta": {
@@ -322,14 +336,34 @@
    "volume_mm3": 458,
    "peso_PETG_g": 0.6,
    "non_manifold_edges": 0
+  },
+  "P14_Rondella_Dentata": {
+   "min": [
+    -9.5,
+    -10.4,
+    0.0
+   ],
+   "max": [
+    9.5,
+    9.5,
+    2.15
+   ],
+   "size": [
+    19.0,
+    19.9,
+    2.15
+   ],
+   "volume_mm3": 372,
+   "peso_PETG_g": 0.5,
+   "non_manifold_edges": 0
   }
  },
  "controlli": {
   "interferenze_uso_mm3": {},
-  "coppie_controllate_uso": 22,
+  "coppie_controllate_uso": 27,
   "ingombro_uso_mm": [
    [
-    -7.68,
+    -19.1,
     185.0
    ],
    [
@@ -338,11 +372,11 @@
    ],
    [
     0.0,
-    264.59
+    263.08
    ]
   ],
   "interferenze_prolunghe_mm3": {},
-  "coppie_controllate_prolunghe": 40,
+  "coppie_controllate_prolunghe": 43,
   "ingombro_prolunghe_mm": [
    [
     0.0,
@@ -358,7 +392,7 @@
    ]
   ],
   "interferenze_piegato_mm3": {},
-  "coppie_controllate_piegato": 32,
+  "coppie_controllate_piegato": 36,
   "ingombro_piegato_mm": [
    [
     0.0,
@@ -391,16 +425,19 @@
     649.7
    ]
   },
-  "mensola_uso_mm": 144.8,
+  "mensola_uso_mm": 143.3,
   "corsa_appoggio_mm": 68.6,
-  "telefono_baricentro_x_uso_mm": 20.3,
-  "telefono_baricentro_x_uso_appoggio_in_alto_mm": -3.2,
+  "telefono_baricentro_x_uso_mm": 8.9,
+  "telefono_baricentro_x_uso_appoggio_in_alto_mm": -14.6,
   "telefono_baricentro_x_prolunghe_mm": 31.8,
   "telefono_baricentro_x_dritto_appoggio_in_alto_mm": 8.4,
   "sfilo_massimo_per_tratto_mm": 40.0,
   "pacco_cerniera_mm": 48.4,
   "vite_cerniera_in_presa_nel_pomello_mm": 8.55,
   "vite_cerniera_spazio_in_fondo_al_pomello_mm": 2.85,
+  "denti_gioco_per_sganciarli_mm": 0.85,
+  "denti_altezza_mm": 0.65,
+  "rondella_spessore_mm": 1.5,
   "parete_sede_collo_orecchia_mm": 2.36,
   "parete_nocca_attorno_al_foro_mm": 4.6,
   "parete_sopra_canale_mm": 2.5,
@@ -409,7 +446,9 @@
   "piatto_dietro_la_cava_mm": 2.2,
   "pomello_appoggio_sotto_la_mensola_mm": 0.5,
   "vite_appoggio_in_presa_nel_pomello_mm": 8.45,
-  "vite_appoggio_spazio_in_fondo_al_pomello_mm": 2.95
+  "vite_appoggio_spazio_in_fondo_al_pomello_mm": 2.95,
+  "telefono_tocca_mm3": {},
+  "cavo_tocca_mm3": {}
  },
  "montaggio": {
   "P01_Base": {
@@ -673,6 +712,39 @@
     [
      8.5,
      26.5
+    ]
+   ]
+  },
+  "P14_Rondella_Dentata": {
+   "matrice": [
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ]
+   ],
+   "bounds": [
+    [
+     20.5,
+     39.5
+    ],
+    [
+     13.0,
+     15.15
+    ],
+    [
+     7.1,
+     27.0
     ]
    ]
   },
