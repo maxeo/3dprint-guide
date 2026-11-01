@@ -42,7 +42,8 @@
    "lunga": 80.0
   },
   "pomello_diametro": 22.0,
-  "pomello_altezza": 11.0,
+  "pomello_altezza": 13.0,
+  "pomello_morsa_altezza": 11.0,
   "posa_uso": {
    "alfa": 95.0,
    "sfilo": 20.0,
@@ -211,15 +212,15 @@
    "max": [
     11.0,
     11.0,
-    11.0
+    13.0
    ],
    "size": [
     22.0,
     22.0,
-    11.0
+    13.0
    ],
-   "volume_mm3": 2890,
-   "peso_PETG_g": 3.7,
+   "volume_mm3": 3374,
+   "peso_PETG_g": 4.3,
    "non_manifold_edges": 0
   },
   "P10_Pomello_Appoggio": {
@@ -231,15 +232,15 @@
    "max": [
     11.0,
     11.0,
-    11.0
+    13.0
    ],
    "size": [
     22.0,
     22.0,
-    11.0
+    13.0
    ],
-   "volume_mm3": 3144,
-   "peso_PETG_g": 4.0,
+   "volume_mm3": 3694,
+   "peso_PETG_g": 4.7,
    "non_manifold_edges": 0
   },
   "P11_Pomello_Morsa": {
@@ -399,7 +400,7 @@
   "sfilo_massimo_per_tratto_mm": 40.0,
   "pacco_cerniera_mm": 48.4,
   "vite_cerniera_in_presa_nel_pomello_mm": 8.55,
-  "vite_cerniera_spazio_in_fondo_al_pomello_mm": 0.45,
+  "vite_cerniera_spazio_in_fondo_al_pomello_mm": 2.85,
   "parete_sede_collo_orecchia_mm": 2.36,
   "parete_nocca_attorno_al_foro_mm": 4.6,
   "parete_sopra_canale_mm": 2.5,
@@ -407,7 +408,8 @@
   "pomello_morsa_staccato_dal_rinforzo_mm": 2.75,
   "piatto_dietro_la_cava_mm": 2.2,
   "pomello_appoggio_sotto_la_mensola_mm": 0.5,
-  "vite_appoggio_in_presa_nel_pomello_mm": 8.45
+  "vite_appoggio_in_presa_nel_pomello_mm": 8.45,
+  "vite_appoggio_spazio_in_fondo_al_pomello_mm": 2.95
  },
  "montaggio": {
   "P01_Base": {
@@ -600,7 +602,7 @@
     ],
     [
      24.25,
-     35.25
+     37.25
     ],
     [
      6.78,
@@ -632,7 +634,7 @@
      40.92
     ],
     [
-     -35.25,
+     -37.25,
      -24.25
     ],
     [
@@ -761,7 +763,7 @@
    "bounds": [
     [
      59.52,
-     76.68
+     78.56
     ],
     [
      -32.91,
@@ -769,7 +771,7 @@
     ],
     [
      421.67,
-     445.26
+     445.94
     ]
    ]
   },

@@ -2,12 +2,12 @@ SKINKOCCHIALI - REVISIONE 14 - STAMPA E MONTAGGIO
 13 settembre 2026, aggiornato il 14 settembre 2026
 
 ORIENTAMENTO
-Vista dal davanti: Nord a destra, Sud a sinistra.
+Destra e sinistra si intendono guardando dal davanti.
 Assieme: X verso destra; Y verso il fondo; Z verso l'alto.
 STL singoli: in millimetri, scala 100%, Z minimo = 0.
 P04 e P05 sono ruotati per la stampa; usare il file Blender per l'assieme.
 Ingombro assieme: 150 x 126,1 x 220,3 mm. La quota del mobile 310 x 130 x 219 mm e un riferimento precedente.
-La profondita include il portaocchiali; la larghezza include la sua sporgenza a Sud.
+La profondita include il portaocchiali; la larghezza include la sua sporgenza a sinistra.
 
 DA STAMPARE - UNA COPIA CIASCUNO, TRANNE P07
 stl/P01_Modulo_principale.stl - 115.0 x 100.0 x 220.3 mm
@@ -42,7 +42,7 @@ Non e stata eseguita una simulazione dello slicer, ne una stampa fisica.
 MONTAGGIO
 1. Inserire P02 e P03 nelle sedi superiori di P01 (tre file di fori, Y = 25, 42,5, 60).
    Configurazione mostrata: P02 x=25..29 (pioli a X=27); P03 x=30..80 (pioli a X=42 e 72).
-   Appoggiare il fermo a L P08 a Sud di P02: perni nei fori X=22, Y=25, 42,5 e 60.
+   Appoggiare il fermo a L P08 a sinistra di P02: perni nei fori X=22, Y=25, 42,5 e 60.
 2. Appoggiare le due chiavi P07 sul piano e abbassarvi sopra P06: meta chiave entra
    nelle tasche sotto la mensola, l'altra meta sporge dietro. Da sopra non si vedono.
    Abbassare P01 sopra P06: le sedi sotto la base ricevono l'altra meta delle chiavi.
@@ -66,11 +66,11 @@ Scarico locale del bordo posteriore della tasca per non interferire con P03.
 Tutti i componenti riflessi lungo Y per correggere destra/sinistra nella vista frontale.
 
 AGGIORNAMENTO DEL 14 SETTEMBRE 2026
-P01: tolto il telaio Sud (montanti, traverso e bordino); il lato Sud resta aperto.
-P01: parete posteriore da 2,4 mm da Sud fino al divisorio; la Sezione 3 resta aperta dietro.
+P01: tolto il telaio sinistro (montanti, traverso e bordino); il lato sinistro resta aperto.
+P01: parete posteriore da 2,4 mm da sinistra fino al divisorio; la Sezione 3 resta aperta dietro.
 P01: fermi superiori spostati agli angoli della grata.
 P01-P06: agganci a coda di rondine sostituiti da due chiavi a meandro P07 (gioco 0,3 mm per lato).
-P01: due sedi uguali sul bordo Sud (Y = 12 e 70,5 mm) per moduli futuri.
+P01: due sedi uguali sul bordo sinistro (Y = 12 e 70,5 mm) per moduli futuri.
 P01: terza fila di fori degli inserti a Y = 42,5 mm; P02 e P03 hanno i pioli corrispondenti.
 P02 e P03 invertiti: P02 a X 25-29, P03 a X 30-80. Scarico della tasca allungato fino a X 80,3.
 P01: tasca del porta patch rifatta a portapenne: pareti alte 30 mm, gioco 1 mm per lato,

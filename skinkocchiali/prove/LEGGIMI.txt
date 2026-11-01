@@ -16,14 +16,14 @@ e la corsa completa vanno provate sui componenti interi.
 
 PROVINO DELLA BASE DI P01 - stampare una copia
 
-T03_Segmento_base_3_fori.stl: striscia della base di P01 dal bordo Sud (X 0-16 mm),
+T03_Segmento_base_3_fori.stl: striscia della base di P01 dal bordo sinistro (X 0-16 mm),
 profonda quanto la base (80 mm), alta 7,5 mm. Contiene le tre file di fori
 Ø3,4 per i primi tre fori (X = 2, 7, 12 mm), le due tasche a meandro sotto la
 base per la chiave P07 e l'attacco della parete posteriore.
 Stampare con il fondo sul piatto. Provare i perni di P02/P03/P08 nei fori e
 la chiave P07 nelle tasche inferiori.
 
-T04_Fetta_Sud_completa.stl: fetta ridotta del lato Sud (X 0-8 mm), a tutta
+T04_Fetta_Sud_completa.stl: fetta ridotta del lato sinistro (X 0-8 mm), a tutta
 altezza (220,3 mm): base, parete posteriore, striscia della grata e due
 fermi superiori ridotti a 8 mm di larghezza. Profondita totale 100 mm.
 Stampare in verticale come P01, con supporti sotto la grata che sporge davanti.
@@ -130,7 +130,7 @@ T03 (X 0-16 mm) e T04 (X 0-8 mm) non comprendono le parti modificate
 (barre nuove da X = 29 mm, tasca da X = 31,6 mm): restano validi cosi.
 
 
-AGGIORNAMENTO 20 OTTOBRE 2026 (2) - PARETE NORD DA 2 MM
-T11_Tasca_porta_patch_con_base.stl: parete esterna Nord portata da 0,8
+AGGIORNAMENTO 20 OTTOBRE 2026 (2) - PARETE DESTRA DA 2 MM
+T11_Tasca_porta_patch_con_base.stl: parete esterna destra portata da 0,8
 a 2 mm come in P01; fessura interna invariata, fermo spostato di 1,2 mm.
-Ingombro nuovo 57,2 x 100 x 52,5 mm. T03 e T04 invariati (lato Sud).
+Ingombro nuovo 57,2 x 100 x 52,5 mm. T03 e T04 invariati (lato sinistro).

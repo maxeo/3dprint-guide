@@ -2,7 +2,7 @@
 
 Supporto pieghevole da scrivania per telefono, ispirato a quello delle foto in `originale/`: base, braccio telescopico a tratti, prolunghe da aggiungere quante se ne vuole, piatto con appoggio regolabile. Le due cerniere sono viti stampate strette da pomelli zigrinati filettati (frizione regolabile a mano); ogni tratto del braccio ha una morsa a pomello; l'appoggio scorre su una guida a T nel piatto e si blocca col suo pomello. Tutto stampato, viti e dadi compresi: non serve viteria.
 
-**Guida di stampa e montaggio:** [guida.html](guida.html)
+**Guida di stampa e montaggio:** [guida.html](guida.html) · online: https://maxeo.github.io/3dprint-guide/supporto-telefono/guida.html
 
 ## Pezzi
 
@@ -13,15 +13,15 @@ Supporto pieghevole da scrivania per telefono, ispirato a quello delle foto in `
 | P03 | `stl/P03_Slitta.stl` | 107 × 30 × 20 | 1 |
 | P04 | `stl/P04_Piatto.stl` | 150 × 80 × 32 | 1 |
 | P05 | `stl/P05_Appoggio.stl` | 35,5 × 20,3 × 70 | 1 |
-| P06 | `stl/P06_Pomello.stl` (cerniere, madrevite Ø10) | Ø22 × 11 | 2 |
+| P06 | `stl/P06_Pomello.stl` (cerniere, madrevite Ø10) | Ø22 × 13 | 2 |
 | P07 | `stl/P07_Prolunga.stl` | 185 × 35 × 20 | quante ne vuoi (anche 0) |
 | P08 | `stl/P08_Vite_Cerniera.stl` (Ø10 × 57, testa tonda e collo quadro) | Ø18 × 61 | 2 |
 | P09 | `stl/P09_Vite_Appoggio.stl` (Ø8, testa quadra) | 12,6 × 12,6 × 16,9 | 1 |
-| P10 | `stl/P10_Pomello_Appoggio.stl` (madrevite Ø8) | Ø22 × 11 | 1 |
+| P10 | `stl/P10_Pomello_Appoggio.stl` (madrevite Ø8) | Ø22 × 13 | 1 |
 | P11 | `stl/P11_Pomello_Morsa.stl` (pomello con vite Ø8 × 12) | Ø22 × 23 | 1 + 1 per prolunga |
 | P12 | `stl/P12_Dado_Morsa.stl` (dado esagonale 13, madrevite Ø8) | 13 × 15 × 5 | 1 + 1 per prolunga |
 
-Filetti trapezoidali passo 2,5 (come le palline), 0,35 mm di gioco radiale; viti e pomelli si stampano in piedi senza supporti. Viti e dadi pieni, strato 0,16 mm. Facoltativi: 4 piedini adesivi Ø10.
+Filetti trapezoidali passo 2,5 (come le palline), 0,35 mm di gioco radiale; nei pomelli P06 e P10 la madrevite cieca lascia circa 3 mm liberi oltre la punta della vite, perché il cielo del foro stampato cala un poco e la vite non deve battere sul fondo; viti e pomelli si stampano in piedi senza supporti. Viti e dadi pieni, strato 0,16 mm. Facoltativi: 4 piedini adesivi Ø10.
 
 Tutti i pezzi si stampano senza supporti (PETG, 0,2 mm; parametri proposti nella guida, da verificare).
 

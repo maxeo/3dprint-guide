@@ -12,7 +12,7 @@ Il sistema deve integrare:
 - un porta-patch removibile;
 - un modulo portaocchiali removibile;
 - un sistema di inserti sulla faccia superiore della base per spostare alcuni moduli;
-- una predisposizione per aggiungere moduli successivi verso Sud.
+- una predisposizione per aggiungere moduli successivi verso sinistra.
 
 Si utilizza **solo la Variante A**.
 
@@ -22,14 +22,13 @@ Si utilizza **solo la Variante A**.
 
 Il mobile viene osservato frontalmente.
 
-- **Nord = destra**
-- **Sud = sinistra**
+- **destra e sinistra guardando il mobile dal davanti**
 - **Davanti = verso chi guarda il mobile**
 - **Dietro = fondo del mobile**
 - **Alto = soffitto del mobile**
 - **Basso = piano inferiore del mobile**
 
-Gli elementi principali partono da Nord e si sviluppano verso Sud.
+Gli elementi principali partono da destra e si sviluppano verso sinistra.
 
 ---
 
@@ -65,13 +64,13 @@ Le sezioni verticali arrivano direttamente sulla base: non deve esserci uno spaz
 
 # 5. Distribuzione laterale
 
-La configurazione logica da **Nord verso Sud** è:
+La configurazione logica da **destra verso sinistra** è:
 
 1. **Sezione 1 — 4 × 80 mm — fissa**
 2. **Sezione 3 — 30 × 80 mm — fissa**
 3. **Sezione 2 — 4 × 60 mm — mobile**
 4. **Sezione 4 — 50 × 80 mm — mobile**
-5. **Zona strutturale Sud — 27 mm — fissa**
+5. **Zona strutturale sinistra — 27 mm — fissa**
 
 Controllo totale:
 
@@ -87,7 +86,7 @@ La posizione relativa delle due sezioni mobili non è però obbligatoriamente qu
 
 - larghezza: **4 mm**
 - profondità: **80 mm**
-- posizione: lato Nord
+- posizione: lato destro
 - **fissa**
 
 ## 6.2 Sezione 2
@@ -102,7 +101,7 @@ Questa sezione può essere collocata, a seconda della configurazione desiderata:
 
 - dopo la sezione fissa da 30 mm;
 - dopo la sezione mobile da 50 mm;
-- oppure ulteriormente verso Sud sfruttando anche gli inserti presenti nella zona strutturale da 27 mm.
+- oppure ulteriormente verso sinistra sfruttando anche gli inserti presenti nella zona strutturale da 27 mm.
 
 ## 6.3 Sezione 3
 
@@ -126,15 +125,15 @@ Può essere spostata e reinstallata senza utensili.
 
 ---
 
-# 7. Zona strutturale Sud da 27 mm
+# 7. Zona strutturale sinistra da 27 mm
 
-La zona da **27 mm** sul lato Sud rimane parte della struttura permanente del modulo principale.
+La zona da **27 mm** sul lato sinistro rimane parte della struttura permanente del modulo principale.
 
 Deve:
 
 - contribuire alla rigidità generale;
 - sostenere la grata superiore;
-- mantenere la predisposizione per l'espansione verso Sud;
+- mantenere la predisposizione per l'espansione verso sinistra;
 - avere sulla **faccia superiore della base** lo stesso sistema di inserti usato per i moduli mobili.
 
 Quindi la zona da 27 mm è strutturale, ma **la sua superficie superiore rimane utilizzabile per il posizionamento dei moduli removibili**.
@@ -145,7 +144,7 @@ Quindi la zona da 27 mm è strutturale, ma **la sua superficie superiore rimane 
 
 Gli inserti superiori devono coprire:
 
-- i **27 mm** della zona strutturale Sud;
+- i **27 mm** della zona strutturale sinistra;
 - i **54 mm** normalmente occupati da Sezione 2 e Sezione 4.
 
 Totale fascia utile:
@@ -179,7 +178,7 @@ Devono poter:
 
 - essere rimossi singolarmente;
 - essere invertiti;
-- essere traslati verso Sud;
+- essere traslati verso sinistra;
 - sfruttare anche la superficie superiore della zona strutturale da 27 mm;
 - essere reinstallati manualmente.
 
@@ -187,9 +186,9 @@ Restano invece fissi:
 
 - Sezione 1 da 4 × 80 mm;
 - Sezione 3 da 30 × 80 mm;
-- telaio strutturale Sud;
+- telaio strutturale sinistro;
 - grata;
-- parete Nord;
+- parete destra;
 - struttura posteriore.
 
 ---
@@ -243,7 +242,7 @@ La struttura deve garantire il passaggio d'aria attraverso:
 
 - grata superiore;
 - camera d'aria da 10 mm;
-- lato Sud ventilato;
+- lato sinistro ventilato;
 - eventuali aperture posteriori.
 
 La parte frontale sotto la grata deve rimanere **completamente aperta**.
@@ -256,12 +255,12 @@ La grata deve essere indipendente dai moduli removibili.
 
 Deve essere sostenuta da elementi permanenti:
 
-- parete Nord;
+- parete destra;
 - struttura posteriore;
-- telaio strutturale Sud;
+- telaio strutturale sinistro;
 - eventuali nervature.
 
-Il lato Sud può avere una parete o telaio, purché sia:
+Il lato sinistro può avere una parete o telaio, purché sia:
 
 - traforato;
 - a griglia;
@@ -314,7 +313,7 @@ Spazio interno consigliato:
 
 Il porta-patch è collocato sul davanti del modulo principale.
 
-Non deve interferire con la sezione sottile fissa più a Nord.
+Non deve interferire con la sezione sottile fissa più a destra.
 
 È accettabile che per accedere alle scatoline retrostanti sia necessario rimuovere il porta-patch.
 
@@ -417,8 +416,8 @@ Il portaocchiali deve avere un bordino di circa:
 presente lungo:
 
 - fronte;
-- lato Nord;
-- lato Sud.
+- lato destro;
+- lato sinistro.
 
 Il bordo deve limitare lo scivolamento senza ostacolare il prelievo degli occhiali.
 
@@ -476,9 +475,9 @@ Il sistema di aggancio deve essere ricavato nella base del modulo principale.
 
 ---
 
-# 21. Predisposizione per moduli futuri verso Sud
+# 21. Predisposizione per moduli futuri verso sinistra
 
-Il modulo principale deve permettere l'aggiunta futura di ulteriori moduli verso Sud.
+Il modulo principale deve permettere l'aggiunta futura di ulteriori moduli verso sinistra.
 
 Questa funzione è indipendente dagli inserti superiori usati per Sezione 2 e Sezione 4.
 
@@ -487,7 +486,7 @@ Il principio è:
 - modulo principale: **cavità femmina**
 - modulo aggiuntivo: **maschi integrati nel pezzo**
 
-I giunti devono trovarsi nel **bordo Sud della base**, sullo stesso piano del modulo principale.
+I giunti devono trovarsi nel **bordo sinistro della base**, sullo stesso piano del modulo principale.
 
 Non devono essere rappresentati come moduli montati sotto il corpo principale.
 
@@ -505,16 +504,16 @@ Servono per:
 - Sezione 4 da 50 × 80 mm;
 - eventuali futuri accessori montati sopra la base.
 
-Coprono una fascia di **81 mm**, inclusi i 27 mm strutturali Sud.
+Coprono una fascia di **81 mm**, inclusi i 27 mm strutturali a sinistra.
 
-## Giunti verso Sud
+## Giunti verso sinistra
 
 Servono per:
 
-- aggiungere nuovi moduli lateralmente verso Sud;
+- aggiungere nuovi moduli lateralmente verso sinistra;
 - estendere il sistema lungo la larghezza del mobile.
 
-Questi giunti si trovano sul bordo Sud della base.
+Questi giunti si trovano sul bordo sinistro della base.
 
 I due sistemi non devono interferire tra loro.
 
@@ -551,13 +550,13 @@ Il progetto finale dovrà generare almeno i seguenti componenti separati:
    - base da 115 mm;
    - Sezione 1 fissa;
    - Sezione 3 fissa;
-   - struttura Nord;
-   - struttura Sud;
+   - struttura destra;
+   - struttura sinistra;
    - supporto della grata;
    - grata superiore;
    - inserti superiori;
    - sedi femmina portaocchiali;
-   - sedi femmina per espansione Sud.
+   - sedi femmina per espansione a sinistra.
 
 2. **Sezione 2 removibile**
    - 4 × 60 mm;
@@ -603,7 +602,7 @@ Sono considerate definite le seguenti scelte:
 - porta-patch più basso dei foglietti;
 - portaocchiali da almeno **142 × 46,1 mm**;
 - fermo naso alto **20,7 mm** e posizionato sul davanti;
-- giunti futuri verso Sud sul bordo della base;
+- giunti futuri verso sinistra sul bordo della base;
 - maschi integrati nei moduli aggiuntivi;
 - cavità femmina sul modulo principale.
 
@@ -616,7 +615,7 @@ La richiesta successiva dell'utente sostituisce il requisito del porta patch tra
 Gli originali sono conservati come riferimento; non sono istruzioni operative aggiuntive.
 
 La geometria della bozza è stata riflessa lungo Y per rendere coerente la vista
-frontale di Blender: X positivo a destra (Nord), Y positivo verso il fondo.
+frontale di Blender: X positivo a destra, Y positivo verso il fondo.
 Non si tratta di una semplice modifica delle etichette.
 
 Sono state corrette due interferenze della tasca su P01: con il piede di P04 e con
@@ -640,8 +639,8 @@ Scorrimento, resistenza e tolleranze di stampa devono essere verificati fisicame
 
 Modifiche richieste dopo la revisione 14, applicate agli STL e al file Blender.
 
-- **Lato Sud aperto.** Il telaio Sud di P01 (montanti, traverso superiore e bordino sopra la base) è stato rimosso. La base da 6 mm resta intera.
-- **Parete posteriore.** P01 ha una parete da 2,4 mm a Y = 77,6–80 mm, dal bordo Sud fino al divisorio della Sezione 3. La Sezione 3 resta aperta sul retro.
+- **Lato sinistro aperto.** Il telaio sinistro di P01 (montanti, traverso superiore e bordino sopra la base) è stato rimosso. La base da 6 mm resta intera.
+- **Parete posteriore.** P01 ha una parete da 2,4 mm a Y = 77,6–80 mm, dal bordo sinistro fino al divisorio della Sezione 3. La Sezione 3 resta aperta sul retro.
 - **Sezioni mobili.** P02 e P03 sono accorciati sul retro a Y = 77,3 mm, con 0,3 mm di gioco dalla parete. P03 non ha più il fondo posteriore: lo chiude la parete di P01.
 - **Fermi superiori.** I quattro fermi (10 × 8 mm, fino a 218,7 mm) sono agli angoli della grata.
 - **Nasello.** Punta raccordata con raggio 4 mm e spigoli smussati di 1 mm; altezza 23,7 mm e posizione invariate.
@@ -651,11 +650,11 @@ Modifiche richieste dopo la revisione 14, applicate agli STL e al file Blender.
   - gioco 0,3 mm per lato nel piano;
   - posizioni X = 25 e 85 mm sul bordo anteriore.
   P06 si appoggia per primo, si inseriscono le chiavi e si abbassa P01. Il modulo principale continua ad avere solo cavità.
-- **Espansione verso Sud.** Le due sedi a coda di rondine del bordo Sud sono sostituite da due sedi per la stessa chiave a meandro (Y = 12 e 70,5 mm), sempre aperte sotto la base.
+- **Espansione verso sinistra.** Le due sedi a coda di rondine del bordo sinistro sono sostituite da due sedi per la stessa chiave a meandro (Y = 12 e 70,5 mm), sempre aperte sotto la base.
 - **Inserti.** La base ha tre file di fori Ø3,4 a passo 5 mm (Y = 25, 42,5 e 60 mm); P02 e P03 hanno i pioli Ø3 anche nella fila centrale.
 - **Posizioni invertite.** P02 sta a X = 25–29 mm e P03 a X = 30–80 mm. Lo scarico del bordo posteriore della tasca arriva a X = 80,3 mm.
 - **Tasca del porta patch a portapenne.** Tolti labbro e montanti bassi. La tasca ha fondo a Z = 8 mm, pareti frontale e laterali alte fino a Z = 30 mm, 1 mm di gioco per lato attorno a P04 e svasatura di 1,5 mm sul bordo superiore; il retro resta aperto contro P03. Nel frontale c'è un varco da X = 66 a 74 mm per l'asticella di P05, verificato per tutta la corsa di 25 mm.
-- **Fermo a L (P08).** Appoggio 6,7 × 2,4 mm e ala verticale alta 30 mm, lungo 77,3 mm, con due perni nei fori X = 22, Y = 25 e 60. L'ala resta a 0,3 mm dal fianco Sud di P02.
+- **Fermo a L (P08).** Appoggio 6,7 × 2,4 mm e ala verticale alta 30 mm, lungo 77,3 mm, con due perni nei fori X = 22, Y = 25 e 60. L'ala resta a 0,3 mm dal fianco sinistro di P02.
 
 Verifiche digitali: ogni pezzo è un solido chiuso e connesso; le 36 coppie di solidi dell'assieme, con le due chiavi e il fermo, non hanno intersezioni volumetriche. Accoppiamento delle chiavi e ponti sopra le sedi vanno provati in stampa.
 
