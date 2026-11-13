@@ -15,6 +15,7 @@ PROGETTI=(
   "stand-ps5:Stand Controller PS5"
   "palline:Palline Traforate"
   "supporto-telefono:Supporto Telefono"
+  "calendario-avvento:Calendario Avvento"
 )
 
 for voce in "${PROGETTI[@]}"; do
@@ -25,7 +26,7 @@ for voce in "${PROGETTI[@]}"; do
   cp "$sorgente/guida.html" "$slug/"
   # pulsante per tornare all'indice, solo nelle copie pubblicate
   awk 'index($0, "</body>") && !fatto {while ((getline r < "torna_indice.html") > 0) print r; fatto=1} {print}' "$slug/guida.html" > "$slug/guida.tmp" && mv "$slug/guida.tmp" "$slug/guida.html"
-  grep -oE "[\"'\`][A-Za-z0-9_./ -]+\.(stl|svg|png|txt|md|json|blend)[\"'\`]" "$sorgente/guida.html" \
+  grep -oE "[\"'\`][A-Za-z0-9_./ -]+\.(stl|svg|png|txt|md|json|blend|js)[\"'\`]" "$sorgente/guida.html" \
     | tr -d "\"'\`" | sort -u | while read -r file; do
       # nomi citati nella guida ma non file del progetto (es. file interni allo ZIP generato)
       [ -f "$sorgente/$file" ] || continue
