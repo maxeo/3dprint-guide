@@ -68,5 +68,5 @@ for voce in "${PROGETTI[@]}"; do
   fi
   echo "$slug: $(find "$slug" -type f | wc -l) file, creata $creata, aggiornata $aggiornata"
 done
-# le anteprime dell'indice (anteprime/<slug>_montato.png, _esploso.png) si rifanno a mano
-# con shoot.py della skill guida-stampa-3d quando il modello cambia
+# le anteprime dell'indice (anteprime/<slug>.mp4 e .jpg) si rifanno a mano con
+# python anteprime/clip.py <slug> quando il modello cambia (scene in anteprime/scene/)
