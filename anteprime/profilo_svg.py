@@ -1,4 +1,4 @@
-"""SVG animato per il README del profilo GitHub (maxeo/maxeo, assets/guide-3d.svg; nome nuovo a ogni giro se GitHub tiene in cache quello vecchio): le clip dell'indice in sequenza.
+"""SVG animato per il README del profilo GitHub (maxeo/maxeo, assets/guide-3d-6fps.svg; nome nuovo a ogni giro se GitHub tiene in cache quello vecchio): le clip dell'indice in sequenza.
 
 Uso (dalla cartella del repo):  python anteprime/profilo_svg.py <file .svg da scrivere>
 
@@ -22,7 +22,8 @@ PROGETTI = [("calendario-avvento", "Calendario dell'Avvento", "Si smonta e si ri
             ("skinkocchiali", "SkinkOcchiali", "Vassoio che si solleva"),
             ("sakura", "Sakura", "Moduli a incastro"),
             ("supporto-tablet", "Supporto per tablet", "Si smonta e si rimonta")]
-SLOT, FOTOGRAMMI = 5.0, 12            # secondi per progetto (= durata della clip), immagini per progetto
+SLOT, FOTOGRAMMI = 5.0, 30            # secondi per progetto (= durata della clip), immagini per progetto (6 al secondo)
+LARGHEZZA_JPG = 480                   # fotogrammi più piccoli della vista: la card nel profilo è piccola e il file resta leggero
 X, Y, W, H = 48, 150, 600, 381        # riquadro della vista
 
 
@@ -30,7 +31,7 @@ def fotogrammi(slug):
     cart = tempfile.mkdtemp()
     passo = 120 // FOTOGRAMMI
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(QUI, slug + '.mp4'),
-                    '-vf', "select='not(mod(n\\,%d))',scale=%d:-2" % (passo, W), '-fps_mode', 'vfr', '-q:v', '9',
+                    '-vf', "select='not(mod(n\\,%d))',scale=%d:-2" % (passo, LARGHEZZA_JPG), '-fps_mode', 'vfr', '-q:v', '8',
                     os.path.join(cart, 'f%02d.jpg')], check=True)
     out = []
     for i in range(1, FOTOGRAMMI + 1):
