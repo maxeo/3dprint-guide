@@ -1,4 +1,4 @@
-"""SVG animato per il README del profilo GitHub (maxeo/maxeo, assets/guide-3d-6fps.svg; nome nuovo a ogni giro se GitHub tiene in cache quello vecchio): le clip dell'indice in sequenza.
+"""SVG animato per il README del profilo GitHub (maxeo/maxeo, assets/guide-3d-10p.svg; nome nuovo a ogni giro se GitHub tiene in cache quello vecchio): le clip dell'indice in sequenza.
 
 Uso (dalla cartella del repo):  python anteprime/profilo_svg.py <file .svg da scrivere>
 
@@ -13,7 +13,8 @@ import tempfile
 
 QUI = os.path.dirname(os.path.abspath(__file__))
 # ordine e nomi come nell'indice (dal più recente); etichetta = quella della card
-PROGETTI = [("calendario-avvento", "Calendario dell'Avvento", "Si smonta e si rimonta"),
+PROGETTI = [("supporto-muro-tablet", "Tablet a muro", "Si smonta e si rimonta"),
+            ("calendario-avvento", "Calendario dell'Avvento", "Si smonta e si rimonta"),
             ("supporto-telefono", "Supporto per telefono", "Cerniere a scatti"),
             ("palline", "Palline traforate", "Si svitano"),
             ("stand-ps5", "Stand controller PS5", "In uso"),

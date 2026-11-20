@@ -16,6 +16,7 @@ PROGETTI=(
   "palline:Palline Traforate"
   "supporto-telefono:Supporto Telefono"
   "calendario-avvento:Calendario Avvento"
+  "supporto-muro-tablet:Supporto Muro Tablet T65"
 )
 
 for voce in "${PROGETTI[@]}"; do

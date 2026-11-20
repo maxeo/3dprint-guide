@@ -14,6 +14,7 @@ https://maxeo.github.io/3dprint-guide/
 | Palline Traforate | https://maxeo.github.io/3dprint-guide/palline/guida.html | [3dprint-palline-traforate](https://github.com/maxeo/3dprint-palline-traforate) |
 | Supporto Telefono | https://maxeo.github.io/3dprint-guide/supporto-telefono/guida.html | [3dprint-supporto-telefono](https://github.com/maxeo/3dprint-supporto-telefono) |
 | Calendario dell'Avvento | https://maxeo.github.io/3dprint-guide/calendario-avvento/guida.html | [3dprint-calendario-avvento](https://github.com/maxeo/3dprint-calendario-avvento) |
+| Supporto Muro Tablet T65 | https://maxeo.github.io/3dprint-guide/supporto-muro-tablet/guida.html | [3dprint-supporto-muro-tablet](https://github.com/maxeo/3dprint-supporto-muro-tablet) |
 
 I sorgenti dei progetti stanno nei repo privati `3dprint-*`. Le cartelle qui sono copie:
 per aggiornarle eseguire `./aggiorna_guide.sh`, poi commit e push.
